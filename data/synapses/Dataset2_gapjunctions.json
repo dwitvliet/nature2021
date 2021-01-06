@@ -1,0 +1,1850 @@
+[
+  {
+    "catmaid_id": [
+      9587819
+    ],
+    "n1": "SMDDL",
+    "n2": "SMDDR"
+  },
+  {
+    "catmaid_id": [
+      9587819
+    ],
+    "n1": "SMDDR",
+    "n2": "SMDDL"
+  },
+  {
+    "catmaid_id": [
+      9587817
+    ],
+    "n1": "URYDR",
+    "n2": "SMDDL"
+  },
+  {
+    "catmaid_id": [
+      9587817
+    ],
+    "n1": "SMDDL",
+    "n2": "URYDR"
+  },
+  {
+    "catmaid_id": [
+      9587780
+    ],
+    "n1": "SIADL",
+    "n2": "SIADR"
+  },
+  {
+    "catmaid_id": [
+      9587780
+    ],
+    "n1": "SIADR",
+    "n2": "SIADL"
+  },
+  {
+    "catmaid_id": [
+      9587776
+    ],
+    "n1": "SAAVR",
+    "n2": "SMBVL"
+  },
+  {
+    "catmaid_id": [
+      9587776
+    ],
+    "n1": "SMBVL",
+    "n2": "SAAVR"
+  },
+  {
+    "catmaid_id": [
+      9587695
+    ],
+    "n1": "RMDL",
+    "n2": "SMDDL"
+  },
+  {
+    "catmaid_id": [
+      9587695
+    ],
+    "n1": "SMDDL",
+    "n2": "RMDL"
+  },
+  {
+    "catmaid_id": [
+      9587686
+    ],
+    "n1": "SMDVR",
+    "n2": "RMDVR"
+  },
+  {
+    "catmaid_id": [
+      9587686
+    ],
+    "n1": "RMDVR",
+    "n2": "SMDVR"
+  },
+  {
+    "catmaid_id": [
+      9587684
+    ],
+    "n1": "SAAVR",
+    "n2": "RMDVR"
+  },
+  {
+    "catmaid_id": [
+      9587684
+    ],
+    "n1": "RMDVR",
+    "n2": "SAAVR"
+  },
+  {
+    "catmaid_id": [
+      9587678
+    ],
+    "n1": "RMDL",
+    "n2": "RMDVL"
+  },
+  {
+    "catmaid_id": [
+      9587678
+    ],
+    "n1": "RMDVL",
+    "n2": "RMDL"
+  },
+  {
+    "catmaid_id": [
+      9587674
+    ],
+    "n1": "RMDVL",
+    "n2": "SAAVL"
+  },
+  {
+    "catmaid_id": [
+      9587674
+    ],
+    "n1": "SAAVL",
+    "n2": "RMDVL"
+  },
+  {
+    "catmaid_id": [
+      9587673
+    ],
+    "n1": "RMDVL",
+    "n2": "SAAVL"
+  },
+  {
+    "catmaid_id": [
+      9587673
+    ],
+    "n1": "SAAVL",
+    "n2": "RMDVL"
+  },
+  {
+    "catmaid_id": [
+      9587668
+    ],
+    "n1": "SAADR",
+    "n2": "RMDDR"
+  },
+  {
+    "catmaid_id": [
+      9587668
+    ],
+    "n1": "RMDDR",
+    "n2": "SAADR"
+  },
+  {
+    "catmaid_id": [
+      9587658
+    ],
+    "n1": "RMDDL",
+    "n2": "SAADL"
+  },
+  {
+    "catmaid_id": [
+      9587658
+    ],
+    "n1": "SAADL",
+    "n2": "RMDDL"
+  },
+  {
+    "catmaid_id": [
+      9587645
+    ],
+    "n1": "SMDVL",
+    "n2": "RIVL"
+  },
+  {
+    "catmaid_id": [
+      9587645
+    ],
+    "n1": "RIVL",
+    "n2": "SMDVL"
+  },
+  {
+    "catmaid_id": [
+      9587639
+    ],
+    "n1": "RMDVL",
+    "n2": "SAAVL"
+  },
+  {
+    "catmaid_id": [
+      9587639
+    ],
+    "n1": "SAAVL",
+    "n2": "RMDVL"
+  },
+  {
+    "catmaid_id": [
+      9587577
+    ],
+    "n1": "RIR",
+    "n2": "RIH"
+  },
+  {
+    "catmaid_id": [
+      9587577
+    ],
+    "n1": "RIH",
+    "n2": "RIR"
+  },
+  {
+    "catmaid_id": [
+      9587558
+    ],
+    "n1": "RIGR",
+    "n2": "URYDR"
+  },
+  {
+    "catmaid_id": [
+      9587558
+    ],
+    "n1": "URYDR",
+    "n2": "RIGR"
+  },
+  {
+    "catmaid_id": [
+      9587557
+    ],
+    "n1": "URYVR",
+    "n2": "RIGR"
+  },
+  {
+    "catmaid_id": [
+      9587557
+    ],
+    "n1": "RIGR",
+    "n2": "URYVR"
+  },
+  {
+    "catmaid_id": [
+      9587550
+    ],
+    "n1": "RIGL",
+    "n2": "URYDL"
+  },
+  {
+    "catmaid_id": [
+      9587550
+    ],
+    "n1": "URYDL",
+    "n2": "RIGL"
+  },
+  {
+    "catmaid_id": [
+      9587543
+    ],
+    "n1": "URYVL",
+    "n2": "RIGL"
+  },
+  {
+    "catmaid_id": [
+      9587543
+    ],
+    "n1": "RIGL",
+    "n2": "URYVL"
+  },
+  {
+    "catmaid_id": [
+      9587538
+    ],
+    "n1": "RIGR",
+    "n2": "RIGL"
+  },
+  {
+    "catmaid_id": [
+      9587538
+    ],
+    "n1": "RIGL",
+    "n2": "RIGR"
+  },
+  {
+    "catmaid_id": [
+      9587533
+    ],
+    "n1": "RIFL",
+    "n2": "RIFR"
+  },
+  {
+    "catmaid_id": [
+      9587533
+    ],
+    "n1": "RIFR",
+    "n2": "RIFL"
+  },
+  {
+    "catmaid_id": [
+      9585508
+    ],
+    "n1": "RIBR",
+    "n2": "RIBR"
+  },
+  {
+    "catmaid_id": [
+      9587450
+    ],
+    "n1": "ASHL",
+    "n2": "AVBL"
+  },
+  {
+    "catmaid_id": [
+      9587450
+    ],
+    "n1": "AVBL",
+    "n2": "ASHL"
+  },
+  {
+    "catmaid_id": [
+      9587399
+    ],
+    "n1": "AINR",
+    "n2": "AINL"
+  },
+  {
+    "catmaid_id": [
+      9587399
+    ],
+    "n1": "AINL",
+    "n2": "AINR"
+  },
+  {
+    "catmaid_id": [
+      9587397
+    ],
+    "n1": "AIMR",
+    "n2": "ALMR"
+  },
+  {
+    "catmaid_id": [
+      9587397
+    ],
+    "n1": "ALMR",
+    "n2": "AIMR"
+  },
+  {
+    "catmaid_id": [
+      9587396
+    ],
+    "n1": "AIML",
+    "n2": "ASJL"
+  },
+  {
+    "catmaid_id": [
+      9587396
+    ],
+    "n1": "ASJL",
+    "n2": "AIML"
+  },
+  {
+    "catmaid_id": [
+      9587306
+    ],
+    "n1": "RMER",
+    "n2": "GLRR"
+  },
+  {
+    "catmaid_id": [
+      9587306
+    ],
+    "n1": "GLRR",
+    "n2": "RMER"
+  },
+  {
+    "catmaid_id": [
+      9587305
+    ],
+    "n1": "RMEL",
+    "n2": "GLRL"
+  },
+  {
+    "catmaid_id": [
+      9587305
+    ],
+    "n1": "GLRL",
+    "n2": "RMEL"
+  },
+  {
+    "catmaid_id": [
+      9583918
+    ],
+    "n1": "ADFL",
+    "n2": "ADFR"
+  },
+  {
+    "catmaid_id": [
+      9583918
+    ],
+    "n1": "ADFR",
+    "n2": "ADFL"
+  },
+  {
+    "catmaid_id": [
+      9585523
+    ],
+    "n1": "excgl",
+    "n2": "RICL"
+  },
+  {
+    "catmaid_id": [
+      9585523
+    ],
+    "n1": "RICL",
+    "n2": "excgl"
+  },
+  {
+    "catmaid_id": [
+      9585511
+    ],
+    "n1": "RIGR",
+    "n2": "RIBR"
+  },
+  {
+    "catmaid_id": [
+      9585511
+    ],
+    "n1": "RIBR",
+    "n2": "RIGR"
+  },
+  {
+    "catmaid_id": [
+      9585507
+    ],
+    "n1": "SIBDR",
+    "n2": "RIBR"
+  },
+  {
+    "catmaid_id": [
+      9585507
+    ],
+    "n1": "RIBR",
+    "n2": "SIBDR"
+  },
+  {
+    "catmaid_id": [
+      9585505
+    ],
+    "n1": "RIBR",
+    "n2": "SIAVR"
+  },
+  {
+    "catmaid_id": [
+      9585505
+    ],
+    "n1": "SIAVR",
+    "n2": "RIBR"
+  },
+  {
+    "catmaid_id": [
+      9585504
+    ],
+    "n1": "RIBR",
+    "n2": "SIBVR"
+  },
+  {
+    "catmaid_id": [
+      9585504
+    ],
+    "n1": "SIBVR",
+    "n2": "RIBR"
+  },
+  {
+    "catmaid_id": [
+      9585497
+    ],
+    "n1": "RIBL",
+    "n2": "RIBL"
+  },
+  {
+    "catmaid_id": [
+      9585489
+    ],
+    "n1": "SIAVL",
+    "n2": "RIBL"
+  },
+  {
+    "catmaid_id": [
+      9585489
+    ],
+    "n1": "RIBL",
+    "n2": "SIAVL"
+  },
+  {
+    "catmaid_id": [
+      9585488
+    ],
+    "n1": "SIADL",
+    "n2": "RIBL"
+  },
+  {
+    "catmaid_id": [
+      9585488
+    ],
+    "n1": "RIBL",
+    "n2": "SIADL"
+  },
+  {
+    "catmaid_id": [
+      9585483
+    ],
+    "n1": "RIBR",
+    "n2": "RIBL"
+  },
+  {
+    "catmaid_id": [
+      9585483
+    ],
+    "n1": "RIBL",
+    "n2": "RIBR"
+  },
+  {
+    "catmaid_id": [
+      9585482
+    ],
+    "n1": "RIBR",
+    "n2": "RIBL"
+  },
+  {
+    "catmaid_id": [
+      9585482
+    ],
+    "n1": "RIBL",
+    "n2": "RIBR"
+  },
+  {
+    "catmaid_id": [
+      9585286
+    ],
+    "n1": "RID",
+    "n2": "PVCL"
+  },
+  {
+    "catmaid_id": [
+      9585286
+    ],
+    "n1": "PVCL",
+    "n2": "RID"
+  },
+  {
+    "catmaid_id": [
+      9585282
+    ],
+    "n1": "RIH",
+    "n2": "OLQVR"
+  },
+  {
+    "catmaid_id": [
+      9585282
+    ],
+    "n1": "OLQVR",
+    "n2": "RIH"
+  },
+  {
+    "catmaid_id": [
+      9585279
+    ],
+    "n1": "URBR",
+    "n2": "OLQVR"
+  },
+  {
+    "catmaid_id": [
+      9585279
+    ],
+    "n1": "OLQVR",
+    "n2": "URBR"
+  },
+  {
+    "catmaid_id": [
+      9585276
+    ],
+    "n1": "RIBL",
+    "n2": "OLQVL"
+  },
+  {
+    "catmaid_id": [
+      9585276
+    ],
+    "n1": "OLQVL",
+    "n2": "RIBL"
+  },
+  {
+    "catmaid_id": [
+      9585269
+    ],
+    "n1": "URBR",
+    "n2": "OLQDR"
+  },
+  {
+    "catmaid_id": [
+      9585269
+    ],
+    "n1": "OLQDR",
+    "n2": "URBR"
+  },
+  {
+    "catmaid_id": [
+      9585268
+    ],
+    "n1": "RIGR",
+    "n2": "OLQDR"
+  },
+  {
+    "catmaid_id": [
+      9585268
+    ],
+    "n1": "OLQDR",
+    "n2": "RIGR"
+  },
+  {
+    "catmaid_id": [
+      9585267
+    ],
+    "n1": "OLQDR",
+    "n2": "RIBR"
+  },
+  {
+    "catmaid_id": [
+      9585267
+    ],
+    "n1": "RIBR",
+    "n2": "OLQDR"
+  },
+  {
+    "catmaid_id": [
+      9585256
+    ],
+    "n1": "RIH",
+    "n2": "OLQDL"
+  },
+  {
+    "catmaid_id": [
+      9585256
+    ],
+    "n1": "OLQDL",
+    "n2": "RIH"
+  },
+  {
+    "catmaid_id": [
+      9585255
+    ],
+    "n1": "URBL",
+    "n2": "OLQDL"
+  },
+  {
+    "catmaid_id": [
+      9585255
+    ],
+    "n1": "OLQDL",
+    "n2": "URBL"
+  },
+  {
+    "catmaid_id": [
+      9585254
+    ],
+    "n1": "URBL",
+    "n2": "OLQDL"
+  },
+  {
+    "catmaid_id": [
+      9585254
+    ],
+    "n1": "OLQDL",
+    "n2": "URBL"
+  },
+  {
+    "catmaid_id": [
+      9585252
+    ],
+    "n1": "RIBL",
+    "n2": "OLQDL"
+  },
+  {
+    "catmaid_id": [
+      9585252
+    ],
+    "n1": "OLQDL",
+    "n2": "RIBL"
+  },
+  {
+    "catmaid_id": [
+      9585242
+    ],
+    "n1": "RIGR",
+    "n2": "OLLR"
+  },
+  {
+    "catmaid_id": [
+      9585242
+    ],
+    "n1": "OLLR",
+    "n2": "RIGR"
+  },
+  {
+    "catmaid_id": [
+      9585240
+    ],
+    "n1": "OLQDR",
+    "n2": "OLLR"
+  },
+  {
+    "catmaid_id": [
+      9585240
+    ],
+    "n1": "OLLR",
+    "n2": "OLQDR"
+  },
+  {
+    "catmaid_id": [
+      9585219
+    ],
+    "n1": "OLQVL",
+    "n2": "OLLL"
+  },
+  {
+    "catmaid_id": [
+      9585219
+    ],
+    "n1": "OLLL",
+    "n2": "OLQVL"
+  },
+  {
+    "catmaid_id": [
+      9585218
+    ],
+    "n1": "OLQDL",
+    "n2": "OLLL"
+  },
+  {
+    "catmaid_id": [
+      9585218
+    ],
+    "n1": "OLLL",
+    "n2": "OLQDL"
+  },
+  {
+    "catmaid_id": [
+      9585213
+    ],
+    "n1": "OLLR",
+    "n2": "OLLL"
+  },
+  {
+    "catmaid_id": [
+      9585213
+    ],
+    "n1": "OLLL",
+    "n2": "OLLR"
+  },
+  {
+    "catmaid_id": [
+      9585208
+    ],
+    "n1": "OLLR",
+    "n2": "OLLL"
+  },
+  {
+    "catmaid_id": [
+      9585208
+    ],
+    "n1": "OLLL",
+    "n2": "OLLR"
+  },
+  {
+    "catmaid_id": [
+      9585184
+    ],
+    "n1": "URXR",
+    "n2": "IL2R"
+  },
+  {
+    "catmaid_id": [
+      9585184
+    ],
+    "n1": "IL2R",
+    "n2": "URXR"
+  },
+  {
+    "catmaid_id": [
+      9585183
+    ],
+    "n1": "URXR",
+    "n2": "IL2R"
+  },
+  {
+    "catmaid_id": [
+      9585183
+    ],
+    "n1": "IL2R",
+    "n2": "URXR"
+  },
+  {
+    "catmaid_id": [
+      9585182
+    ],
+    "n1": "RMGR",
+    "n2": "IL2R"
+  },
+  {
+    "catmaid_id": [
+      9585182
+    ],
+    "n1": "IL2R",
+    "n2": "RMGR"
+  },
+  {
+    "catmaid_id": [
+      9585176
+    ],
+    "n1": "IL2L",
+    "n2": "RMGL"
+  },
+  {
+    "catmaid_id": [
+      9585176
+    ],
+    "n1": "RMGL",
+    "n2": "IL2L"
+  },
+  {
+    "catmaid_id": [
+      9585175
+    ],
+    "n1": "IL2L",
+    "n2": "URXL"
+  },
+  {
+    "catmaid_id": [
+      9585175
+    ],
+    "n1": "URXL",
+    "n2": "IL2L"
+  },
+  {
+    "catmaid_id": [
+      9585102
+    ],
+    "n1": "IL1R",
+    "n2": "IL1DR"
+  },
+  {
+    "catmaid_id": [
+      9585102
+    ],
+    "n1": "IL1DR",
+    "n2": "IL1R"
+  },
+  {
+    "catmaid_id": [
+      9585048
+    ],
+    "n1": "OLQVR",
+    "n2": "DVA"
+  },
+  {
+    "catmaid_id": [
+      9585048
+    ],
+    "n1": "DVA",
+    "n2": "OLQVR"
+  },
+  {
+    "catmaid_id": [
+      9585020
+    ],
+    "n1": "RIH",
+    "n2": "CEPDR"
+  },
+  {
+    "catmaid_id": [
+      9585020
+    ],
+    "n1": "CEPDR",
+    "n2": "RIH"
+  },
+  {
+    "catmaid_id": [
+      9585005
+    ],
+    "n1": "OLQDL",
+    "n2": "CEPDL"
+  },
+  {
+    "catmaid_id": [
+      9585005
+    ],
+    "n1": "CEPDL",
+    "n2": "OLQDL"
+  },
+  {
+    "catmaid_id": [
+      9584995
+    ],
+    "n1": "BDUL",
+    "n2": "BDUR"
+  },
+  {
+    "catmaid_id": [
+      9584995
+    ],
+    "n1": "BDUR",
+    "n2": "BDUL"
+  },
+  {
+    "catmaid_id": [
+      9584988
+    ],
+    "n1": "RIR",
+    "n2": "BAGR"
+  },
+  {
+    "catmaid_id": [
+      9584988
+    ],
+    "n1": "BAGR",
+    "n2": "RIR"
+  },
+  {
+    "catmaid_id": [
+      9584980
+    ],
+    "n1": "RIBR",
+    "n2": "BAGL"
+  },
+  {
+    "catmaid_id": [
+      9584980
+    ],
+    "n1": "BAGL",
+    "n2": "RIBR"
+  },
+  {
+    "catmaid_id": [
+      9584978
+    ],
+    "n1": "RIR",
+    "n2": "BAGL"
+  },
+  {
+    "catmaid_id": [
+      9584978
+    ],
+    "n1": "BAGL",
+    "n2": "RIR"
+  },
+  {
+    "catmaid_id": [
+      9584932
+    ],
+    "n1": "AWBR",
+    "n2": "AWBL"
+  },
+  {
+    "catmaid_id": [
+      9584932
+    ],
+    "n1": "AWBL",
+    "n2": "AWBR"
+  },
+  {
+    "catmaid_id": [
+      9584899
+    ],
+    "n1": "PVT",
+    "n2": "AVKR"
+  },
+  {
+    "catmaid_id": [
+      9584899
+    ],
+    "n1": "AVKR",
+    "n2": "PVT"
+  },
+  {
+    "catmaid_id": [
+      9584883
+    ],
+    "n1": "PVPR",
+    "n2": "AVKL"
+  },
+  {
+    "catmaid_id": [
+      9584883
+    ],
+    "n1": "AVKL",
+    "n2": "PVPR"
+  },
+  {
+    "catmaid_id": [
+      9584881
+    ],
+    "n1": "SMBDR",
+    "n2": "AVKL"
+  },
+  {
+    "catmaid_id": [
+      9584881
+    ],
+    "n1": "AVKL",
+    "n2": "SMBDR"
+  },
+  {
+    "catmaid_id": [
+      9584879
+    ],
+    "n1": "SMBDL",
+    "n2": "AVKL"
+  },
+  {
+    "catmaid_id": [
+      9584879
+    ],
+    "n1": "AVKL",
+    "n2": "SMBDL"
+  },
+  {
+    "catmaid_id": [
+      9584877
+    ],
+    "n1": "RIS",
+    "n2": "AVJR"
+  },
+  {
+    "catmaid_id": [
+      9584877
+    ],
+    "n1": "AVJR",
+    "n2": "RIS"
+  },
+  {
+    "catmaid_id": [
+      9584861
+    ],
+    "n1": "URYVL",
+    "n2": "AVER"
+  },
+  {
+    "catmaid_id": [
+      9584861
+    ],
+    "n1": "AVER",
+    "n2": "URYVL"
+  },
+  {
+    "catmaid_id": [
+      9584860
+    ],
+    "n1": "OLQVL",
+    "n2": "AVER"
+  },
+  {
+    "catmaid_id": [
+      9584860
+    ],
+    "n1": "AVER",
+    "n2": "OLQVL"
+  },
+  {
+    "catmaid_id": [
+      9584857
+    ],
+    "n1": "OLQDL",
+    "n2": "AVER"
+  },
+  {
+    "catmaid_id": [
+      9584857
+    ],
+    "n1": "AVER",
+    "n2": "OLQDL"
+  },
+  {
+    "catmaid_id": [
+      9584856
+    ],
+    "n1": "RIMR",
+    "n2": "AVER"
+  },
+  {
+    "catmaid_id": [
+      9584856
+    ],
+    "n1": "AVER",
+    "n2": "RIMR"
+  },
+  {
+    "catmaid_id": [
+      9584854
+    ],
+    "n1": "RIVR",
+    "n2": "AVER"
+  },
+  {
+    "catmaid_id": [
+      9584854
+    ],
+    "n1": "AVER",
+    "n2": "RIVR"
+  },
+  {
+    "catmaid_id": [
+      9584853
+    ],
+    "n1": "URYVR",
+    "n2": "AVEL"
+  },
+  {
+    "catmaid_id": [
+      9584853
+    ],
+    "n1": "AVEL",
+    "n2": "URYVR"
+  },
+  {
+    "catmaid_id": [
+      9584852
+    ],
+    "n1": "RIML",
+    "n2": "AVEL"
+  },
+  {
+    "catmaid_id": [
+      9584852
+    ],
+    "n1": "AVEL",
+    "n2": "RIML"
+  },
+  {
+    "catmaid_id": [
+      9584851
+    ],
+    "n1": "OLQDR",
+    "n2": "AVEL"
+  },
+  {
+    "catmaid_id": [
+      9584851
+    ],
+    "n1": "AVEL",
+    "n2": "OLQDR"
+  },
+  {
+    "catmaid_id": [
+      9584850
+    ],
+    "n1": "URYDR",
+    "n2": "AVEL"
+  },
+  {
+    "catmaid_id": [
+      9584850
+    ],
+    "n1": "AVEL",
+    "n2": "URYDR"
+  },
+  {
+    "catmaid_id": [
+      9584849
+    ],
+    "n1": "SMDVL",
+    "n2": "AVEL"
+  },
+  {
+    "catmaid_id": [
+      9584849
+    ],
+    "n1": "AVEL",
+    "n2": "SMDVL"
+  },
+  {
+    "catmaid_id": [
+      9584847
+    ],
+    "n1": "AVDL",
+    "n2": "AVDR"
+  },
+  {
+    "catmaid_id": [
+      9584847
+    ],
+    "n1": "AVDR",
+    "n2": "AVDL"
+  },
+  {
+    "catmaid_id": [
+      9584846
+    ],
+    "n1": "RIBL",
+    "n2": "AVBR"
+  },
+  {
+    "catmaid_id": [
+      9584846
+    ],
+    "n1": "AVBR",
+    "n2": "RIBL"
+  },
+  {
+    "catmaid_id": [
+      9584845
+    ],
+    "n1": "RIBR",
+    "n2": "AVBL"
+  },
+  {
+    "catmaid_id": [
+      9584845
+    ],
+    "n1": "AVBL",
+    "n2": "RIBR"
+  },
+  {
+    "catmaid_id": [
+      9584843
+    ],
+    "n1": "AVAL",
+    "n2": "RIMR"
+  },
+  {
+    "catmaid_id": [
+      9584843
+    ],
+    "n1": "RIMR",
+    "n2": "AVAL"
+  },
+  {
+    "catmaid_id": [
+      9584842
+    ],
+    "n1": "AVAR",
+    "n2": "AVAL"
+  },
+  {
+    "catmaid_id": [
+      9584842
+    ],
+    "n1": "AVAL",
+    "n2": "AVAR"
+  },
+  {
+    "catmaid_id": [
+      9584833
+    ],
+    "n1": "AUAR",
+    "n2": "RIBR"
+  },
+  {
+    "catmaid_id": [
+      9584833
+    ],
+    "n1": "RIBR",
+    "n2": "AUAR"
+  },
+  {
+    "catmaid_id": [
+      9584832
+    ],
+    "n1": "AUAR",
+    "n2": "RIR"
+  },
+  {
+    "catmaid_id": [
+      9584832
+    ],
+    "n1": "RIR",
+    "n2": "AUAR"
+  },
+  {
+    "catmaid_id": [
+      9584831
+    ],
+    "n1": "AUAR",
+    "n2": "URXR"
+  },
+  {
+    "catmaid_id": [
+      9584831
+    ],
+    "n1": "URXR",
+    "n2": "AUAR"
+  },
+  {
+    "catmaid_id": [
+      9584822
+    ],
+    "n1": "ASKR",
+    "n2": "PVQR"
+  },
+  {
+    "catmaid_id": [
+      9584822
+    ],
+    "n1": "PVQR",
+    "n2": "ASKR"
+  },
+  {
+    "catmaid_id": [
+      9584821
+    ],
+    "n1": "AWAR",
+    "n2": "ASKR"
+  },
+  {
+    "catmaid_id": [
+      9584821
+    ],
+    "n1": "ASKR",
+    "n2": "AWAR"
+  },
+  {
+    "catmaid_id": [
+      9584223
+    ],
+    "n1": "ASHR",
+    "n2": "ASHL"
+  },
+  {
+    "catmaid_id": [
+      9584223
+    ],
+    "n1": "ASHL",
+    "n2": "ASHR"
+  },
+  {
+    "catmaid_id": [
+      9584158
+    ],
+    "n1": "PVR",
+    "n2": "ALMR"
+  },
+  {
+    "catmaid_id": [
+      9584158
+    ],
+    "n1": "ALMR",
+    "n2": "PVR"
+  },
+  {
+    "catmaid_id": [
+      9584148
+    ],
+    "n1": "PVR",
+    "n2": "ALML"
+  },
+  {
+    "catmaid_id": [
+      9584148
+    ],
+    "n1": "ALML",
+    "n2": "PVR"
+  },
+  {
+    "catmaid_id": [
+      9584145
+    ],
+    "n1": "PVR",
+    "n2": "ALML"
+  },
+  {
+    "catmaid_id": [
+      9584145
+    ],
+    "n1": "ALML",
+    "n2": "PVR"
+  },
+  {
+    "catmaid_id": [
+      9584135
+    ],
+    "n1": "ASHR",
+    "n2": "AIZR"
+  },
+  {
+    "catmaid_id": [
+      9584135
+    ],
+    "n1": "AIZR",
+    "n2": "ASHR"
+  },
+  {
+    "catmaid_id": [
+      9584105
+    ],
+    "n1": "AWBR",
+    "n2": "AIYR"
+  },
+  {
+    "catmaid_id": [
+      9584105
+    ],
+    "n1": "AIYR",
+    "n2": "AWBR"
+  },
+  {
+    "catmaid_id": [
+      9584104
+    ],
+    "n1": "AUAL",
+    "n2": "AIYR"
+  },
+  {
+    "catmaid_id": [
+      9584104
+    ],
+    "n1": "AIYR",
+    "n2": "AUAL"
+  },
+  {
+    "catmaid_id": [
+      9584075
+    ],
+    "n1": "AIAL",
+    "n2": "AINR"
+  },
+  {
+    "catmaid_id": [
+      9584075
+    ],
+    "n1": "AINR",
+    "n2": "AIAL"
+  },
+  {
+    "catmaid_id": [
+      9584045
+    ],
+    "n1": "RIML",
+    "n2": "AIBR"
+  },
+  {
+    "catmaid_id": [
+      9584045
+    ],
+    "n1": "AIBR",
+    "n2": "RIML"
+  },
+  {
+    "catmaid_id": [
+      9584005
+    ],
+    "n1": "ASJR",
+    "n2": "AIAR"
+  },
+  {
+    "catmaid_id": [
+      9584005
+    ],
+    "n1": "AIAR",
+    "n2": "ASJR"
+  },
+  {
+    "catmaid_id": [
+      9584004
+    ],
+    "n1": "AWBR",
+    "n2": "AIAR"
+  },
+  {
+    "catmaid_id": [
+      9584004
+    ],
+    "n1": "AIAR",
+    "n2": "AWBR"
+  },
+  {
+    "catmaid_id": [
+      9584002
+    ],
+    "n1": "ASJR",
+    "n2": "AIAR"
+  },
+  {
+    "catmaid_id": [
+      9584002
+    ],
+    "n1": "AIAR",
+    "n2": "ASJR"
+  },
+  {
+    "catmaid_id": [
+      9584001
+    ],
+    "n1": "AINL",
+    "n2": "AIAR"
+  },
+  {
+    "catmaid_id": [
+      9584001
+    ],
+    "n1": "AIAR",
+    "n2": "AINL"
+  },
+  {
+    "catmaid_id": [
+      9584000
+    ],
+    "n1": "ASIR",
+    "n2": "AIAR"
+  },
+  {
+    "catmaid_id": [
+      9584000
+    ],
+    "n1": "AIAR",
+    "n2": "ASIR"
+  },
+  {
+    "catmaid_id": [
+      9583990
+    ],
+    "n1": "ASJL",
+    "n2": "AIAL"
+  },
+  {
+    "catmaid_id": [
+      9583990
+    ],
+    "n1": "AIAL",
+    "n2": "ASJL"
+  },
+  {
+    "catmaid_id": [
+      9583985
+    ],
+    "n1": "AWBL",
+    "n2": "AIAL"
+  },
+  {
+    "catmaid_id": [
+      9583985
+    ],
+    "n1": "AIAL",
+    "n2": "AWBL"
+  },
+  {
+    "catmaid_id": [
+      9583984
+    ],
+    "n1": "AIAL",
+    "n2": "AWBR"
+  },
+  {
+    "catmaid_id": [
+      9583984
+    ],
+    "n1": "AWBR",
+    "n2": "AIAL"
+  },
+  {
+    "catmaid_id": [
+      9583972
+    ],
+    "n1": "AIZR",
+    "n2": "AFDR"
+  },
+  {
+    "catmaid_id": [
+      9583972
+    ],
+    "n1": "AFDR",
+    "n2": "AIZR"
+  },
+  {
+    "catmaid_id": [
+      9583971
+    ],
+    "n1": "AFDR",
+    "n2": "AFDL"
+  },
+  {
+    "catmaid_id": [
+      9583971
+    ],
+    "n1": "AFDL",
+    "n2": "AFDR"
+  },
+  {
+    "catmaid_id": [
+      9583957
+    ],
+    "n1": "ADLR",
+    "n2": "RMGR"
+  },
+  {
+    "catmaid_id": [
+      9583957
+    ],
+    "n1": "RMGR",
+    "n2": "ADLR"
+  },
+  {
+    "catmaid_id": [
+      9583948
+    ],
+    "n1": "RMGL",
+    "n2": "ADLL"
+  },
+  {
+    "catmaid_id": [
+      9583948
+    ],
+    "n1": "ADLL",
+    "n2": "RMGL"
+  },
+  {
+    "catmaid_id": [
+      9583946
+    ],
+    "n1": "ADLR",
+    "n2": "ADLL"
+  },
+  {
+    "catmaid_id": [
+      9583946
+    ],
+    "n1": "ADLL",
+    "n2": "ADLR"
+  },
+  {
+    "catmaid_id": [
+      9583933
+    ],
+    "n1": "ADFR",
+    "n2": "AIAR"
+  },
+  {
+    "catmaid_id": [
+      9583933
+    ],
+    "n1": "AIAR",
+    "n2": "ADFR"
+  },
+  {
+    "catmaid_id": [
+      9583932
+    ],
+    "n1": "RIH",
+    "n2": "ADFR"
+  },
+  {
+    "catmaid_id": [
+      9583932
+    ],
+    "n1": "ADFR",
+    "n2": "RIH"
+  },
+  {
+    "catmaid_id": [
+      9583919
+    ],
+    "n1": "ADFL",
+    "n2": "RIH"
+  },
+  {
+    "catmaid_id": [
+      9583919
+    ],
+    "n1": "RIH",
+    "n2": "ADFL"
+  },
+  {
+    "catmaid_id": [
+      9583915
+    ],
+    "n1": "AIAL",
+    "n2": "ADFL"
+  },
+  {
+    "catmaid_id": [
+      9583915
+    ],
+    "n1": "ADFL",
+    "n2": "AIAL"
+  },
+  {
+    "catmaid_id": [
+      9583886
+    ],
+    "n1": "ALMR",
+    "n2": "ADAR"
+  },
+  {
+    "catmaid_id": [
+      9583886
+    ],
+    "n1": "ADAR",
+    "n2": "ALMR"
+  },
+  {
+    "catmaid_id": [
+      9583884
+    ],
+    "n1": "ASHR",
+    "n2": "ADAR"
+  },
+  {
+    "catmaid_id": [
+      9583884
+    ],
+    "n1": "ADAR",
+    "n2": "ASHR"
+  },
+  {
+    "catmaid_id": [
+      9583883
+    ],
+    "n1": "ADAR",
+    "n2": "ADFR"
+  },
+  {
+    "catmaid_id": [
+      9583883
+    ],
+    "n1": "ADFR",
+    "n2": "ADAR"
+  },
+  {
+    "catmaid_id": [
+      9583882
+    ],
+    "n1": "AVER",
+    "n2": "ADAR"
+  },
+  {
+    "catmaid_id": [
+      9583882
+    ],
+    "n1": "ADAR",
+    "n2": "AVER"
+  },
+  {
+    "catmaid_id": [
+      9583881
+    ],
+    "n1": "ASKR",
+    "n2": "ADAR"
+  },
+  {
+    "catmaid_id": [
+      9583881
+    ],
+    "n1": "ADAR",
+    "n2": "ASKR"
+  },
+  {
+    "catmaid_id": [
+      9583874
+    ],
+    "n1": "ADAR",
+    "n2": "AVDL"
+  },
+  {
+    "catmaid_id": [
+      9583874
+    ],
+    "n1": "AVDL",
+    "n2": "ADAR"
+  },
+  {
+    "catmaid_id": [
+      9583867
+    ],
+    "n1": "ADAL",
+    "n2": "ASHL"
+  },
+  {
+    "catmaid_id": [
+      9583867
+    ],
+    "n1": "ASHL",
+    "n2": "ADAL"
+  },
+  {
+    "catmaid_id": [
+      9583866
+    ],
+    "n1": "AVDR",
+    "n2": "ADAL"
+  },
+  {
+    "catmaid_id": [
+      9583866
+    ],
+    "n1": "ADAL",
+    "n2": "AVDR"
+  },
+  {
+    "catmaid_id": [
+      9583865
+    ],
+    "n1": "AVDL",
+    "n2": "ADAL"
+  },
+  {
+    "catmaid_id": [
+      9583865
+    ],
+    "n1": "ADAL",
+    "n2": "AVDL"
+  },
+  {
+    "catmaid_id": [
+      9583864
+    ],
+    "n1": "ASHL",
+    "n2": "ADAL"
+  },
+  {
+    "catmaid_id": [
+      9583864
+    ],
+    "n1": "ADAL",
+    "n2": "ASHL"
+  },
+  {
+    "catmaid_id": [
+      9583834
+    ],
+    "n1": "AIZL",
+    "n2": "AIZR"
+  },
+  {
+    "catmaid_id": [
+      9583834
+    ],
+    "n1": "AIZR",
+    "n2": "AIZL"
+  },
+  {
+    "catmaid_id": [
+      9583833
+    ],
+    "n1": "ADAL",
+    "n2": "ADAR"
+  },
+  {
+    "catmaid_id": [
+      9583833
+    ],
+    "n1": "ADAR",
+    "n2": "ADAL"
+  }
+]
