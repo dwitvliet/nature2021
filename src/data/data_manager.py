@@ -192,8 +192,8 @@ def get_legacy_connections(dataset_to_get):
 
     connections = {}
     with open(os.path.join(legacy_data, 'edgelist_durbin.txt')) as f:
-        for l in f:
-            pre, post, typ, dataset, synapses = l.strip().split('\t')
+        for line in f:
+            pre, post, typ, dataset, synapses = line.strip().split('\t')
 
             # Skip muscles as they were reannotated.
             if post == 'mu_bod':
@@ -211,8 +211,7 @@ def get_legacy_connections(dataset_to_get):
                         'Send_joint': 'Receive_joint',
                         'Receive_joint': 'Send_joint'}
 
-            if dataset_to_get != {'N2U': 'white_adult', 'JSH': 'white_l4'}[
-                dataset]:
+            if dataset_to_get != {'N2U': 'white_adult', 'JSH': 'white_l4'}[dataset]:
                 continue
 
             key = (typ, pre, post)
@@ -231,11 +230,9 @@ def get_legacy_connections(dataset_to_get):
 
     legacy_connections = pd.Series(connections_joined, name=dataset_to_get)
 
-    catmaid_connections = get_connections([dataset_to_get])[
-        ('count', dataset_to_get)]
+    catmaid_connections = get_connections([dataset_to_get])[('count', dataset_to_get)]
 
-    legacy_connections.index = legacy_connections.index.set_names(
-        catmaid_connections.index.names)
+    legacy_connections.index = legacy_connections.index.set_names(catmaid_connections.index.names)
 
     return pd.concat([legacy_connections, catmaid_connections]).sort_index()
 
