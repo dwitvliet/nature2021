@@ -105,7 +105,7 @@ class Plotter(object):
 
 
     def plot(
-        self, plot_type, data, save='', show=True, size=0.5, colors=defaultdict(lambda: 'k'), save_scale=1, 
+        self, plot_type, data, save='', show=True, size=0.5, colors=defaultdict(lambda: 'k'), save_scale=2,
         y_label='', x_label='', xlim=None, ylim=None, no_x=False, no_y=False,
         hline=None, vline=None, xticks=None, xticklabels=None, yticks=None, yticklabels=None,
         hlines=None,
@@ -132,7 +132,7 @@ class Plotter(object):
         size[0] += margin['left'] + margin['right']
         size[1] += margin['top'] + margin['bottom']
             
-        fig = plt.figure(figsize=(size*self.page_size), dpi=300)
+        fig = plt.figure(figsize=(size*self.page_size), dpi=150)
         ax = fig.gca()
         
  
@@ -164,7 +164,6 @@ class Plotter(object):
         if ygrid:
             plt.grid(which='major', axis='y', linewidth=Plotter.linewidth, color='#eeeeee', clip_on=False, zorder=0)
 
-#        colors = defaultdict(lambda: '#FFFFFF', colors)
         if xlog:
             ax.set_xscale('log')
         if ylog:
@@ -177,19 +176,17 @@ class Plotter(object):
         if xlim:
             ax.set_xlim(xlim)
             
-        #**********************************************************************
+        # **********************************************************************
         
         plot_method(ax, data, colors, *args, **kwargs)
         
-        #**********************************************************************
+        # **********************************************************************
         
         if plot_type == 'hist' and xlim:
             ax.set_xlim(xlim)
 
         ax.set_ylabel(y_label, labelpad=ypad)
         ax.set_xlabel(x_label, labelpad=xpad)
-        
-        
         
         if xticks is not None:
             if str(xticks) == 'remove':
@@ -208,21 +205,20 @@ class Plotter(object):
         if yticklabels is not None:
             ax.set_yticklabels(yticklabels)
             
-        if hline != None:
+        if hline is not None:
             ax.axhline(hline, c='k', linewidth=Plotter.linewidth, zorder=-1)
         if hlines:
             for y in hlines:
                 ax.axhline(y, c='#eeeeee', linewidth=Plotter.linewidth/2.0, zorder=-1, clip_on=False)
                 
-        if vline != None:
+        if vline is not None:
             ax.axvline(vline, color='#777777', linestyle='dotted', linewidth=Plotter.linewidth, zorder=-1)
         
-        if xintersect != None:
+        if xintersect is not None:
             ax.spines['bottom'].set_position(('data', xintersect))
-        if yintersect != None:
+        if yintersect is not None:
             ax.spines['left'].set_position(('data', yintersect))
-        
-        
+
         if colorbar:
             ax_bar = fig.add_axes([0.89, 0.41, 0.02, 0.4])
             (r1, g1, b1), (r2, g2, b2) = colorbar
@@ -235,40 +231,37 @@ class Plotter(object):
         if scalex:
             xticks = ax.get_xticks()
             ax.set_xticklabels([x*scalex for x in xticks])
-        
-        
- 
+
         if save:
             with warnings.catch_warnings():
-                warnings.filterwarnings("ignore", message="'MyriadPro-Regular.otf' can not be subsetted into a Type 3 font. The entire font will be embedded in the output.")
-                warnings.filterwarnings("ignore", message="'MyriadPro-Bold.otf' can not be subsetted into a Type 3 font. The entire font will be embedded in the output.")
+                warnings.filterwarnings("ignore")
                 png_path = os.path.join(self.output_path, save + '.png')
                 png_path_old = os.path.join(self.output_path, save + '__old.png')
                 pdf_path = os.path.join(self.output_path, save + '.pdf')
-                # Only update pdf if graph changed, to prevent confusing GIT.
+                # Only update pdf if the graph changed, to prevent confusing git.
                 if os.path.exists(png_path):
                     os.rename(png_path, png_path_old)
-                plt.savefig(png_path, bbox_inches='tight', dpi=fig.dpi*save_scale)
-                
+                plt.savefig(png_path, dpi=fig.dpi*save_scale)
+
                 graph_changed = True
                 if os.path.exists(png_path_old):
                     graph_changed = not(filecmp.cmp(png_path, png_path_old))
                     os.remove(png_path_old)
                 try:
-                    plt.savefig(pdf_path) #, bbox_inches='tight')
+                    if graph_changed:
+                        plt.savefig(pdf_path) #, bbox_inches='tight')
                 except Exception:
                     print('Error while trying to save pdf')
-        
+
+            print(f'Saved to `{os.path.join(self.output_path, save)}`:')
+
         if show:
             plt.show()
         else:
             plt.close()
 
-
-
     def empty(self, ax, data, colors):
         ax.plot([], [])
-
 
     def table(self, ax, columns, colors, width=1000.0, height=1000.0, header=[], row_names=[]):
         #1349
@@ -372,11 +365,11 @@ class Plotter(object):
                  legend_shift_right=0, legend_shift_top=0, markersize=6, legendcol=None, clipon=False, dots=True,
                  linewidth=None):
 
-        '''
+        """
         Generates a simple line graph, where the x-axis is the developmental
         timeline of C. elegans, with larval stages labeled instead of hours post-
         hatching.
-        '''
+        """
         xs, ys = data
 
         larval_stage_ends = [0, 16, 25, 34, 45]
