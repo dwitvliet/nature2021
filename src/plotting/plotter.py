@@ -509,7 +509,6 @@ class Plotter(object):
                 ps = [v[4] for v in stats_values]
                 ps_corrected = fdrcorrection0(ps)[1]
                 p = ps_corrected[i]
-                print(p)
                 
                 if p == -1:
                     t = ''
@@ -541,9 +540,7 @@ class Plotter(object):
                         unique_y[x].append(y[j])
                     xs_line = sorted(set(xs))
                     y_line = [np.mean(unique_y[x]) for x in xs_line]
-                
-#                print(xs_line)
-#                print(y_line)
+
                     
                 linewidth = linewidth or Plotter.linewidth
                 linestyle = 'solid'
