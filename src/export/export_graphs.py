@@ -9,10 +9,7 @@ from src.data.neuron_info import ntype, is_neuron, is_postemb
 from src.data.dataset_info import all_datasets
 
 
-save_to = 'figures/exports'
-
-
-def export_graphs_for_cytoscape(edge_classifications):
+def export_graphs_for_cytoscape(save_to, edge_classifications):
 
     categories = {
         'increase': 'Developmental change',
