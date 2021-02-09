@@ -83,31 +83,31 @@ def export_graphs_for_cytoscape(edge_classifications):
         graphs[d].remove_nodes_from(list(nx.isolates(graphs[d])))
 
     for dataset, G in graphs.items():
-        #number of nodes
+        # number of nodes
         nodelist = list(G.nodes())
         A = np.array(nx.adjacency_matrix(G, nodelist=nodelist, weight='weight_normalized').todense()).astype(float)
 
-        #symmetrize the adjacency matrix
+        # symmetrize the adjacency matrix
         c = (A + np.transpose(A))/2.0
 
-        #degree matrix
+        # degree matrix
         d = np.diag(np.sum(c, axis=0))
         df = sc.linalg.fractional_matrix_power(d, -0.5)
 
-        #Laplacian matrix
+        # Laplacian matrix
         l = d - c
 
-        #compute the vertical coordinates
+        # compute the vertical coordinates
         b = np.sum(c * np.sign(A - np.transpose(A)), 1)
         z = np.matmul(np.linalg.pinv(l), b)
 
-        #degree-normalized graph Laplacian
+        # degree-normalized graph Laplacian
         q = np.matmul(np.matmul(df, l), df)
 
-        #coordinates in plane are eigenvectors of degree-normalized graph Laplacian
+        # coordinates in plane are eigenvectors of degree-normalized graph Laplacian
         _, vx = np.linalg.eig(q)
-        x = np.matmul(df, vx[:,1])
-        y = np.matmul(df, vx[:,2])
+        x = np.matmul(df, vx[:, 1])
+        y = np.matmul(df, vx[:, 2])
 
         for n in graph.nodes():
             key = '' if dataset == 'combined' else dataset + '_'
