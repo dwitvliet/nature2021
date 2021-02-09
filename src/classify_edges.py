@@ -18,9 +18,9 @@ def classify_edges(datasets=all_datasets, edge_type='count'):
     assert edge_type in ('count', 'size', 'density', 'contact')
 
     if edge_type == 'contact':
-        G_postemb = data_manager.get_connections(datasets).copy()
+        G_postemb = data_manager.get_adjacency(datasets).copy()
     elif edge_type == 'density':
-        G_postemb = data_manager.get_adjacency(datasets)['count'].copy()
+        G_postemb = data_manager.get_connections(datasets)['count'].copy()
     else:
         G_postemb = data_manager.get_connections(datasets)[edge_type].copy()
     G_postemb = G_postemb[(G_postemb.sum(axis=1) > 0)]
