@@ -1,10 +1,10 @@
-all_datasets = [
+all_datasets = (
     'Dataset1', 'Dataset2', 'Dataset3', 'Dataset4', 'Dataset5', 'Dataset6', 'Dataset7', 'Dataset8',
-]
+)
 
-datasets_with_adj = [
+datasets_with_adj = (
     'Dataset1', 'Dataset2', 'Dataset3', 'Dataset4', 'Dataset5', 'Dataset6', 'Dataset8',
-]
+)
 
 timepoint = {
     'Dataset1': 0,
