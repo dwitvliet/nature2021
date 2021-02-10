@@ -462,9 +462,6 @@ class Plotter(object):
                 y_before = y_total
                 y_total = y_total + y_raw
                 
-                print(x_raw)
-                print(y_total)
-                
                 if x_raw[-1] == x_raw[-2]:
                     x_average = list(xs[:-2]) + [np.mean(xs[-2:])]
                     y_average = list(y_total[:-2]) + [np.mean(y_total[-2:])]
@@ -473,10 +470,6 @@ class Plotter(object):
                     x_average = x_raw
                     y_average = y_total
                     y_before_average = y_before
-                
-                print(x_average)
-                print(y_average)
-                
 
                 ax.plot(
                     list(x_average) + [60], list(y_average) + [y_average[-1]], 
