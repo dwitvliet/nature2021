@@ -502,6 +502,8 @@ class Plotter(object):
                 ps = [v[4] for v in stats_values]
                 ps_corrected = fdrcorrection0(ps)[1]
                 p = ps_corrected[i]
+
+                print('Corrected p-value:', p)
                 
                 if p == -1:
                     t = ''
