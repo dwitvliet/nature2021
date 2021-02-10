@@ -1,0 +1,1929 @@
+pre,post,classification
+ADA,ADE,variable
+ADA,AIA,variable
+ADA,AIB,variable
+ADA,AIZ,variable
+ADA,ASH,variable
+ADA,AVA,stable
+ADA,AVB,stable
+ADA,AVD,variable
+ADA,AVE,variable
+ADA,AVH,variable
+ADA,AVJ,stable
+ADA,DVA,variable
+ADA,IL2D,variable
+ADA,OLQV,variable
+ADA,PVP,variable
+ADA,RIA,variable
+ADA,RIC,stable
+ADA,RID,variable
+ADA,RIF,variable
+ADA,RIM,stable
+ADA,RIP,developmentally dynamic (strengthened)
+ADA,RMF,post-embryonic brain integration
+ADA,SAAD,variable
+ADA,SAAV,variable
+ADA,SDQ,post-embryonic brain integration
+ADA,SIBV,variable
+ADA,SMDD,variable
+ADA,SMDV,variable
+ADA,URAD,variable
+ADA,URAV,variable
+ADA,URX,variable
+ADE,ADA,stable
+ADE,ADE,variable
+ADE,AIN,variable
+ADE,ALM,variable
+ADE,ALN,post-embryonic brain integration
+ADE,AQR,post-embryonic brain integration
+ADE,ASJ,variable
+ADE,AVA,stable
+ADE,AVB,variable
+ADE,AVD,variable
+ADE,AVE,variable
+ADE,AVK,developmentally dynamic (strengthened)
+ADE,BDU,variable
+ADE,BWM04D,variable
+ADE,BWM04V,variable
+ADE,CEPD,developmentally dynamic (strengthened)
+ADE,CEPV,variable
+ADE,CEPshD,variable
+ADE,CEPshV,variable
+ADE,DVA,variable
+ADE,DVC,variable
+ADE,FLP,variable
+ADE,GLRL/R,variable
+ADE,IL1L/R,developmentally dynamic (strengthened)
+ADE,IL2L/R,developmentally dynamic (strengthened)
+ADE,OLL,developmentally dynamic (strengthened)
+ADE,PVC,variable
+ADE,PVN,post-embryonic brain integration
+ADE,PVP,variable
+ADE,PVR,variable
+ADE,PVT,variable
+ADE,RIF,variable
+ADE,RIG,developmentally dynamic (strengthened)
+ADE,RIH,variable
+ADE,RIS,variable
+ADE,RIV,developmentally dynamic (strengthened)
+ADE,RMDD,variable
+ADE,RMDL/R,developmentally dynamic (strengthened)
+ADE,RMEL/R,variable
+ADE,RMF,post-embryonic brain integration
+ADE,RMG,variable
+ADE,RMH,post-embryonic brain integration
+ADE,SAAD,variable
+ADE,SAAV,variable
+ADE,SDQ,post-embryonic brain integration
+ADE,SIAD,variable
+ADE,SIBD,variable
+ADE,SIBV,variable
+ADE,SMBD,variable
+ADE,SMBV,variable
+ADE,SMDD,variable
+ADE,SMDV,variable
+ADE,URB,variable
+ADF,ADA,variable
+ADF,ADF,variable
+ADF,AFD,variable
+ADF,AIA,variable
+ADF,AIB,variable
+ADF,AIY,variable
+ADF,AIZ,stable
+ADF,ASE,variable
+ADF,ASG,variable
+ADF,ASH,variable
+ADF,AUA,stable
+ADF,AVH,variable
+ADF,AWA,variable
+ADF,AWB,variable
+ADF,BAG,variable
+ADF,DVA,variable
+ADF,OLQV,variable
+ADF,PVQ,variable
+ADF,RIA,stable
+ADF,RIC,variable
+ADF,RIG,developmentally dynamic (strengthened)
+ADF,RIH,variable
+ADF,RIM,variable
+ADF,RIR,variable
+ADF,SIBD,variable
+ADF,SIBV,variable
+ADF,SMBD,variable
+ADF,SMBV,stable
+ADF,URX,variable
+ADF,URYV,variable
+ADL,ADA,variable
+ADL,AIA,stable
+ADL,AIB,stable
+ADL,ASE,variable
+ADL,ASG,variable
+ADL,ASH,developmentally dynamic (strengthened)
+ADL,ASJ,variable
+ADL,ASK,developmentally dynamic (weakened)
+ADL,AVA,developmentally dynamic (strengthened)
+ADL,AVB,variable
+ADL,AVD,stable
+ADL,AVE,variable
+ADL,AVH,variable
+ADL,AVJ,stable
+ADL,AWA,variable
+ADL,AWB,variable
+ADL,AWC,stable
+ADL,CEPshV,variable
+ADL,HSN,post-embryonic brain integration
+ADL,OLL,variable
+ADL,OLQV,variable
+ADL,PVC,variable
+ADL,PVN,post-embryonic brain integration
+ADL,PVP,variable
+ADL,PVQ,variable
+ADL,SIAD,variable
+ADL,SIBD,variable
+ADL,SMBV,variable
+ADL,URB,variable
+ADL,URYV,variable
+AFD,ADF,variable
+AFD,AIB,variable
+AFD,AIN,variable
+AFD,AIY,stable
+AFD,AIZ,variable
+AFD,ASE,variable
+AFD,AUA,variable
+AFD,AWA,variable
+AFD,AWB,variable
+AFD,AWC,variable
+AFD,BAG,variable
+AIA,ADA,variable
+AIA,ADF,variable
+AIA,ADL,developmentally dynamic (strengthened)
+AIA,AIB,stable
+AIA,AIN,variable
+AIA,AIY,variable
+AIA,AIZ,variable
+AIA,ASE,variable
+AIA,ASG,variable
+AIA,ASH,variable
+AIA,ASI,variable
+AIA,ASK,stable
+AIA,AWA,variable
+AIA,AWB,variable
+AIA,AWC,stable
+AIA,HSN,post-embryonic brain integration
+AIA,PVQ,variable
+AIA,RIF,stable
+AIB,ADA,variable
+AIB,ADL,variable
+AIB,AIA,variable
+AIB,AIB,variable
+AIB,AIY,variable
+AIB,AIZ,variable
+AIB,AQR,post-embryonic brain integration
+AIB,AUA,developmentally dynamic (strengthened)
+AIB,AVA,developmentally dynamic (strengthened)
+AIB,AVB,stable
+AIB,AVE,variable
+AIB,AVK,variable
+AIB,BAG,variable
+AIB,DVA,variable
+AIB,DVC,variable
+AIB,PVP,variable
+AIB,RIA,variable
+AIB,RIB,stable
+AIB,RIG,variable
+AIB,RIM,stable
+AIB,RIV,variable
+AIB,RMED/V,variable
+AIB,RMF,post-embryonic brain integration
+AIB,SAAD,stable
+AIB,SAAV,developmentally dynamic (strengthened)
+AIB,SIAD,variable
+AIB,SIBV,variable
+AIB,SMBD,variable
+AIB,SMDD,stable
+AIB,SMDV,stable
+AIM,ADA,variable
+AIM,AIA,stable
+AIM,AIB,variable
+AIM,AIM,variable
+AIM,AIY,variable
+AIM,AIZ,developmentally dynamic (strengthened)
+AIM,ALM,variable
+AIM,ASG,stable
+AIM,ASH,variable
+AIM,ASI,variable
+AIM,ASJ,variable
+AIM,ASK,stable
+AIM,AVA,variable
+AIM,AVB,variable
+AIM,AVD,variable
+AIM,AVE,variable
+AIM,AVF,post-embryonic brain integration
+AIM,AVH,variable
+AIM,AVJ,variable
+AIM,AWB,variable
+AIM,AWC,variable
+AIM,CEPV,variable
+AIM,CEPshD,developmentally dynamic (strengthened)
+AIM,CEPshV,variable
+AIM,HSN,post-embryonic brain integration
+AIM,PVN,post-embryonic brain integration
+AIM,PVQ,variable
+AIM,RIC,variable
+AIM,RID,variable
+AIM,RIF,developmentally dynamic (strengthened)
+AIM,RMG,variable
+AIM,SDQ,post-embryonic brain integration
+AIM,SIAD,variable
+AIM,SIBD,variable
+AIM,SMBD,variable
+AIM,SMBV,variable
+AIM,SMDD,variable
+AIM,URX,variable
+AIN,ADF,variable
+AIN,AFD,stable
+AIN,AIA,variable
+AIN,AIB,variable
+AIN,AIN,variable
+AIN,AIY,variable
+AIN,ASE,stable
+AIN,ASG,variable
+AIN,AUA,stable
+AIN,AVA,variable
+AIN,AWC,variable
+AIN,BAG,stable
+AIN,CEPV,variable
+AIN,CEPshD,variable
+AIN,CEPshV,stable
+AIN,IL2L/R,variable
+AIN,RIA,variable
+AIN,RIB,stable
+AIN,RID,variable
+AIN,RIM,developmentally dynamic (strengthened)
+AIN,RMF,post-embryonic brain integration
+AIN,URX,variable
+AIY,ADF,developmentally dynamic (weakened)
+AIY,AFD,variable
+AIY,AIA,variable
+AIY,AIB,variable
+AIY,AIY,variable
+AIY,AIZ,stable
+AIY,ASE,variable
+AIY,AUA,variable
+AIY,AVB,variable
+AIY,AWA,variable
+AIY,AWB,variable
+AIY,AWC,variable
+AIY,BAG,variable
+AIY,RIA,stable
+AIY,RIB,stable
+AIY,RIM,variable
+AIY,RIR,variable
+AIY,RIV,variable
+AIY,SIBD,variable
+AIZ,ADF,variable
+AIZ,AFD,variable
+AIZ,AIA,stable
+AIZ,AIB,stable
+AIZ,AIY,variable
+AIZ,AIZ,variable
+AIZ,ASE,variable
+AIZ,ASG,variable
+AIZ,AUA,variable
+AIZ,AVA,variable
+AIZ,AVD,variable
+AIZ,AVE,stable
+AIZ,AVH,variable
+AIZ,AVK,variable
+AIZ,AWA,variable
+AIZ,AWB,variable
+AIZ,AWC,variable
+AIZ,BAG,variable
+AIZ,DVA,variable
+AIZ,RIA,stable
+AIZ,RIB,variable
+AIZ,RID,variable
+AIZ,RIH,variable
+AIZ,RIM,stable
+AIZ,SIBD,variable
+AIZ,SMBD,stable
+AIZ,SMBV,stable
+AIZ,SMDV,variable
+AIZ,URYD,variable
+ALA,ADL,variable
+ALA,ASJ,variable
+ALA,AVA,variable
+ALA,AVE,stable
+ALA,BDU,variable
+ALA,CAN,variable
+ALA,CEPshD,variable
+ALA,CEPshV,variable
+ALA,IL1L/R,variable
+ALA,IL2L/R,variable
+ALA,PVN,post-embryonic brain integration
+ALM,ADA,variable
+ALM,ADE,variable
+ALM,AIM,variable
+ALM,ALN,post-embryonic brain integration
+ALM,AVB,variable
+ALM,AVD,developmentally dynamic (strengthened)
+ALM,AVE,variable
+ALM,AVF,post-embryonic brain integration
+ALM,AVM,post-embryonic brain integration
+ALM,BDU,stable
+ALM,CEPD,stable
+ALM,CEPV,variable
+ALM,CEPshD,variable
+ALM,IL2L/R,variable
+ALM,PVC,developmentally dynamic (strengthened)
+ALM,PVN,post-embryonic brain integration
+ALM,PVR,variable
+ALM,RID,variable
+ALM,RIF,variable
+ALM,RMDD,variable
+ALM,RMG,variable
+ALM,SDQ,post-embryonic brain integration
+ALM,SMBD,variable
+ALM,URB,variable
+ALN,ADE,post-embryonic brain integration
+ALN,AVA,post-embryonic brain integration
+ALN,BWM04D,post-embryonic brain integration
+ALN,BWM06D,post-embryonic brain integration
+ALN,RIA,post-embryonic brain integration
+ALN,RIG,post-embryonic brain integration
+ALN,RIV,post-embryonic brain integration
+ALN,RMG,post-embryonic brain integration
+ALN,RMH,post-embryonic brain integration
+ALN,SAAD,post-embryonic brain integration
+ALN,SAAV,post-embryonic brain integration
+ALN,SMBD,post-embryonic brain integration
+ALN,SMDD,post-embryonic brain integration
+ALN,SMDV,post-embryonic brain integration
+AQR,ADA,post-embryonic brain integration
+AQR,ADE,post-embryonic brain integration
+AQR,AIB,post-embryonic brain integration
+AQR,AUA,post-embryonic brain integration
+AQR,AVA,post-embryonic brain integration
+AQR,AVB,post-embryonic brain integration
+AQR,AVD,post-embryonic brain integration
+AQR,AVH,post-embryonic brain integration
+AQR,BAG,post-embryonic brain integration
+AQR,DVA,post-embryonic brain integration
+AQR,FLP,post-embryonic brain integration
+AQR,IL1V,post-embryonic brain integration
+AQR,PVC,post-embryonic brain integration
+AQR,PVP,post-embryonic brain integration
+AQR,RIA,post-embryonic brain integration
+AQR,RIB,post-embryonic brain integration
+AQR,RIG,post-embryonic brain integration
+AQR,RIR,post-embryonic brain integration
+AQR,SDQ,post-embryonic brain integration
+ASE,ADL,variable
+ASE,AFD,stable
+ASE,AIA,variable
+ASE,AIB,stable
+ASE,AIN,variable
+ASE,AIY,stable
+ASE,AIZ,stable
+ASE,ASE,variable
+ASE,ASG,variable
+ASE,ASI,variable
+ASE,AWA,variable
+ASE,AWC,stable
+ASE,BAG,variable
+ASE,HSN,post-embryonic brain integration
+ASE,PVQ,variable
+ASE,RIA,developmentally dynamic (strengthened)
+ASG,AIA,stable
+ASG,AIB,stable
+ASG,AIM,developmentally dynamic (weakened)
+ASG,AIZ,variable
+ASG,ASE,variable
+ASG,ASJ,variable
+ASG,AWC,variable
+ASG,CEPV,variable
+ASG,CEPshV,variable
+ASH,ADA,stable
+ASH,ADF,variable
+ASH,ADL,developmentally dynamic (strengthened)
+ASH,AIA,stable
+ASH,AIB,stable
+ASH,AIM,variable
+ASH,AIY,variable
+ASH,AIZ,variable
+ASH,ALM,variable
+ASH,ASE,variable
+ASH,ASH,variable
+ASH,ASK,variable
+ASH,AVA,stable
+ASH,AVB,stable
+ASH,AVD,stable
+ASH,AVE,developmentally dynamic (strengthened)
+ASH,AVF,post-embryonic brain integration
+ASH,AVH,variable
+ASH,AVJ,variable
+ASH,AWA,variable
+ASH,AWB,developmentally dynamic (strengthened)
+ASH,HSN,post-embryonic brain integration
+ASH,PVC,variable
+ASH,PVN,post-embryonic brain integration
+ASH,PVQ,variable
+ASH,RIA,stable
+ASH,RIF,variable
+ASH,RIM,variable
+ASH,RMG,variable
+ASH,SIBV,variable
+ASH,SMBD,variable
+ASH,SMBV,variable
+ASH,URX,variable
+ASI,ADL,variable
+ASI,AFD,variable
+ASI,AIA,stable
+ASI,AIB,variable
+ASI,AIN,variable
+ASI,AIY,variable
+ASI,ASE,variable
+ASI,ASG,developmentally dynamic (strengthened)
+ASI,ASH,variable
+ASI,ASK,variable
+ASI,AVA,variable
+ASI,AWA,developmentally dynamic (strengthened)
+ASI,AWB,variable
+ASI,AWC,stable
+ASI,BAG,variable
+ASI,CEPV,variable
+ASI,CEPshD,variable
+ASI,CEPshV,stable
+ASI,IL1L/R,variable
+ASI,RIA,variable
+ASJ,AIA,variable
+ASJ,AIM,variable
+ASJ,AIN,variable
+ASJ,ALA,variable
+ASJ,ASG,variable
+ASJ,ASK,stable
+ASJ,AVF,post-embryonic brain integration
+ASJ,AWA,variable
+ASJ,CEPshD,variable
+ASJ,CEPshV,variable
+ASJ,HSN,post-embryonic brain integration
+ASJ,PVN,post-embryonic brain integration
+ASJ,PVQ,stable
+ASK,ADA,variable
+ASK,ADL,developmentally dynamic (strengthened)
+ASK,AIA,stable
+ASK,AIB,developmentally dynamic (strengthened)
+ASK,AIM,developmentally dynamic (strengthened)
+ASK,AIN,variable
+ASK,ASE,variable
+ASK,ASG,variable
+ASK,ASH,variable
+ASK,ASI,variable
+ASK,ASJ,variable
+ASK,ASK,variable
+ASK,AVD,variable
+ASK,AVF,post-embryonic brain integration
+ASK,AVJ,variable
+ASK,AWB,variable
+ASK,HSN,post-embryonic brain integration
+ASK,PVN,post-embryonic brain integration
+ASK,PVQ,variable
+ASK,RIF,variable
+ASK,RMG,variable
+ASK,SIBD,variable
+ASK,SMDD,variable
+AUA,ADF,variable
+AUA,AIN,variable
+AUA,AVA,stable
+AUA,AVD,variable
+AUA,AVE,stable
+AUA,BAG,variable
+AUA,DVA,variable
+AUA,RIA,stable
+AUA,RIB,stable
+AUA,RIR,variable
+AUA,SAAV,variable
+AUA,URX,variable
+AUA,URYV,variable
+AVF,ADA,post-embryonic brain integration
+AVF,AIA,post-embryonic brain integration
+AVF,AIM,post-embryonic brain integration
+AVF,ALM,post-embryonic brain integration
+AVF,AQR,post-embryonic brain integration
+AVF,ASH,post-embryonic brain integration
+AVF,ASJ,post-embryonic brain integration
+AVF,ASK,post-embryonic brain integration
+AVF,AVA,post-embryonic brain integration
+AVF,AVB,post-embryonic brain integration
+AVF,AVE,post-embryonic brain integration
+AVF,AVF,post-embryonic brain integration
+AVF,AVH,post-embryonic brain integration
+AVF,AVJ,post-embryonic brain integration
+AVF,AVK,post-embryonic brain integration
+AVF,AVM,post-embryonic brain integration
+AVF,AWA,post-embryonic brain integration
+AVF,AWB,post-embryonic brain integration
+AVF,BDU,post-embryonic brain integration
+AVF,CEPshV,post-embryonic brain integration
+AVF,DVA,post-embryonic brain integration
+AVF,HSN,post-embryonic brain integration
+AVF,PVN,post-embryonic brain integration
+AVF,PVQ,post-embryonic brain integration
+AVF,RID,post-embryonic brain integration
+AVF,RIF,post-embryonic brain integration
+AVF,RMG,post-embryonic brain integration
+AVF,SIAV,post-embryonic brain integration
+AVF,SMBV,post-embryonic brain integration
+AVF,SMDV,post-embryonic brain integration
+AVF,URAD,post-embryonic brain integration
+AVH,ADA,variable
+AVH,ADF,stable
+AVH,ADL,variable
+AVH,AFD,variable
+AVH,AIA,variable
+AVH,AIB,variable
+AVH,AIM,variable
+AVH,AIN,variable
+AVH,AIZ,variable
+AVH,AQR,post-embryonic brain integration
+AVH,ASE,variable
+AVH,ASH,variable
+AVH,AVA,variable
+AVH,AVB,variable
+AVH,AVF,post-embryonic brain integration
+AVH,AVH,variable
+AVH,AVJ,variable
+AVH,AVM,post-embryonic brain integration
+AVH,AWA,variable
+AVH,AWB,stable
+AVH,BAG,variable
+AVH,BDU,variable
+AVH,CEPshD,variable
+AVH,DVA,stable
+AVH,OLQV,variable
+AVH,PVC,variable
+AVH,PVP,stable
+AVH,RIF,variable
+AVH,RIG,variable
+AVH,RIM,variable
+AVH,RIR,developmentally dynamic (strengthened)
+AVH,RIV,variable
+AVH,RMF,post-embryonic brain integration
+AVH,SIAV,variable
+AVH,SMBD,developmentally dynamic (strengthened)
+AVH,SMBV,variable
+AVH,SMDV,variable
+AVH,URX,variable
+AVJ,ADA,variable
+AVJ,AIY,variable
+AVJ,AQR,post-embryonic brain integration
+AVJ,ASH,variable
+AVJ,ASK,variable
+AVJ,AVA,variable
+AVJ,AVB,stable
+AVJ,AVD,variable
+AVJ,AVE,variable
+AVJ,AVH,variable
+AVJ,AVJ,variable
+AVJ,AVM,post-embryonic brain integration
+AVJ,BDU,variable
+AVJ,FLP,variable
+AVJ,PVC,stable
+AVJ,PVN,post-embryonic brain integration
+AVJ,PVP,variable
+AVJ,RID,variable
+AVJ,RIF,variable
+AVJ,RIM,variable
+AVJ,RIS,variable
+AVJ,SMBV,variable
+AVK,AIB,variable
+AVK,ALN,post-embryonic brain integration
+AVK,AVB,variable
+AVK,AVE,stable
+AVK,AVK,variable
+AVK,AVL,variable
+AVK,DVC,variable
+AVK,PVP,variable
+AVK,PVT,variable
+AVK,RIC,variable
+AVK,RIG,variable
+AVK,RIM,stable
+AVK,RIS,variable
+AVK,RIV,variable
+AVK,RMDL/R,stable
+AVK,RMF,post-embryonic brain integration
+AVK,RMG,variable
+AVK,SAAD,stable
+AVK,SAAV,stable
+AVK,SIAD,variable
+AVK,SIBD,variable
+AVK,SMBD,variable
+AVK,SMBV,variable
+AVK,SMDD,developmentally dynamic (strengthened)
+AVK,SMDV,variable
+AVL,BAG,variable
+AVL,CEPshV,variable
+AVL,PVT,variable
+AVL,RIB,variable
+AVL,RIS,variable
+AVL,RMEL/R,variable
+AVL,URYV,variable
+AVM,ADA,post-embryonic brain integration
+AVM,ADE,post-embryonic brain integration
+AVM,ALM,post-embryonic brain integration
+AVM,AVB,post-embryonic brain integration
+AVM,AVD,post-embryonic brain integration
+AVM,AVE,post-embryonic brain integration
+AVM,AVH,post-embryonic brain integration
+AVM,AVJ,post-embryonic brain integration
+AVM,BDU,post-embryonic brain integration
+AVM,FLP,post-embryonic brain integration
+AVM,PVC,post-embryonic brain integration
+AVM,PVN,post-embryonic brain integration
+AVM,PVP,post-embryonic brain integration
+AVM,PVR,post-embryonic brain integration
+AVM,RIS,post-embryonic brain integration
+AWA,ADA,variable
+AWA,ADF,variable
+AWA,ADL,developmentally dynamic (weakened)
+AWA,AFD,developmentally dynamic (strengthened)
+AWA,AIA,stable
+AWA,AIB,variable
+AWA,AIM,variable
+AWA,AIY,stable
+AWA,AIZ,stable
+AWA,ASE,stable
+AWA,ASG,variable
+AWA,ASH,developmentally dynamic (strengthened)
+AWA,ASI,variable
+AWA,ASJ,variable
+AWA,ASK,variable
+AWA,AUA,variable
+AWA,AVB,variable
+AWA,AVH,variable
+AWA,AWA,variable
+AWA,AWB,stable
+AWA,AWC,variable
+AWA,HSN,post-embryonic brain integration
+AWA,PVQ,variable
+AWA,RIB,variable
+AWA,RIF,developmentally dynamic (strengthened)
+AWA,RIG,variable
+AWA,SMBV,variable
+AWB,ADF,stable
+AWB,AIA,variable
+AWB,AIM,variable
+AWB,AIY,variable
+AWB,AIZ,stable
+AWB,ASE,variable
+AWB,ASH,variable
+AWB,AUA,variable
+AWB,AVH,variable
+AWB,AWA,variable
+AWB,HSN,post-embryonic brain integration
+AWB,RIA,developmentally dynamic (strengthened)
+AWB,RIB,variable
+AWB,RIF,variable
+AWB,RIG,developmentally dynamic (strengthened)
+AWB,RIR,variable
+AWB,SIAV,variable
+AWB,SIBD,variable
+AWB,SMBD,variable
+AWB,SMBV,variable
+AWB,URX,variable
+AWC,ADL,variable
+AWC,AFD,variable
+AWC,AIA,stable
+AWC,AIB,stable
+AWC,AIN,variable
+AWC,AIY,stable
+AWC,AIZ,variable
+AWC,ASE,stable
+AWC,ASG,variable
+AWC,ASI,variable
+AWC,ASK,variable
+AWC,AWC,stable
+AWC,BAG,variable
+AWC,CEPshD,variable
+AWC,IL1L/R,variable
+AWC,IL2L/R,variable
+AWC,OLL,variable
+AWC,RMF,post-embryonic brain integration
+BAG,AFD,variable
+BAG,AIB,developmentally dynamic (strengthened)
+BAG,AIN,variable
+BAG,AIY,variable
+BAG,AIZ,variable
+BAG,AVA,developmentally dynamic (strengthened)
+BAG,AVD,variable
+BAG,AVE,stable
+BAG,BAG,variable
+BAG,PVP,variable
+BAG,RIA,stable
+BAG,RIB,stable
+BAG,RID,variable
+BAG,RIG,stable
+BAG,RIR,variable
+BAG,RMF,post-embryonic brain integration
+BAG,URX,variable
+BDU,ADE,variable
+BDU,ALM,stable
+BDU,AVB,variable
+BDU,AVD,variable
+BDU,AVF,post-embryonic brain integration
+BDU,AVH,variable
+BDU,AVJ,stable
+BDU,AVK,variable
+BDU,AVM,post-embryonic brain integration
+BDU,BDU,variable
+BDU,CEPshD,variable
+BDU,CEPshV,variable
+BDU,GLRD,variable
+BDU,HSN,post-embryonic brain integration
+BDU,IL1L/R,variable
+BDU,IL2D,variable
+BDU,PLN,post-embryonic brain integration
+BDU,PVC,variable
+BDU,PVN,post-embryonic brain integration
+BDU,PVQ,variable
+BDU,PVR,variable
+BDU,RID,variable
+BDU,RIF,variable
+BDU,RMG,variable
+BDU,SDQ,post-embryonic brain integration
+BDU,SIBD,variable
+BDU,SIBV,variable
+BDU,SMBD,variable
+BDU,URAD,variable
+BDU,URB,variable
+CEPD,ADA,variable
+CEPD,ADE,variable
+CEPD,ALM,variable
+CEPD,AVA,variable
+CEPD,AVB,variable
+CEPD,AVD,variable
+CEPD,AVE,stable
+CEPD,AVJ,variable
+CEPD,BWM05D,variable
+CEPD,BWM07D,variable
+CEPD,IL1D,developmentally dynamic (strengthened)
+CEPD,IL1L/R,variable
+CEPD,OLL,stable
+CEPD,OLQD,stable
+CEPD,PVR,variable
+CEPD,RIB,variable
+CEPD,RIC,stable
+CEPD,RIP,variable
+CEPD,RIS,variable
+CEPD,RMDD,variable
+CEPD,RMDL/R,variable
+CEPD,RMDV,stable
+CEPD,RMG,variable
+CEPD,RMH,post-embryonic brain integration
+CEPD,SDQ,post-embryonic brain integration
+CEPD,SIAD,variable
+CEPD,SIBV,variable
+CEPD,SMBD,variable
+CEPD,SMDD,variable
+CEPD,URAD,variable
+CEPD,URB,stable
+CEPD,URX,developmentally dynamic (strengthened)
+CEPD,URYD,stable
+CEPV,ADE,variable
+CEPV,ALM,variable
+CEPV,AVB,variable
+CEPV,AVE,stable
+CEPV,BWM01V,variable
+CEPV,BWM05V,variable
+CEPV,CEPshV,variable
+CEPV,IL1L/R,variable
+CEPV,IL1V,developmentally dynamic (strengthened)
+CEPV,IL2V,variable
+CEPV,OLL,stable
+CEPV,OLQV,stable
+CEPV,PLN,post-embryonic brain integration
+CEPV,PVR,variable
+CEPV,RIA,variable
+CEPV,RIB,variable
+CEPV,RIC,stable
+CEPV,RIP,variable
+CEPV,RMDD,stable
+CEPV,RMDL/R,variable
+CEPV,RMG,variable
+CEPV,RMH,post-embryonic brain integration
+CEPV,SIAV,developmentally dynamic (strengthened)
+CEPV,SMBV,variable
+CEPV,SMDD,variable
+CEPV,SMDV,variable
+CEPV,URAV,developmentally dynamic (strengthened)
+CEPV,URB,variable
+CEPV,URX,developmentally dynamic (strengthened)
+CEPV,URYV,stable
+DVA,ADA,variable
+DVA,ADE,variable
+DVA,AIB,variable
+DVA,AIZ,stable
+DVA,AQR,post-embryonic brain integration
+DVA,AUA,variable
+DVA,AVA,stable
+DVA,AVB,variable
+DVA,AVD,variable
+DVA,AVE,stable
+DVA,FLP,variable
+DVA,OLQV,variable
+DVA,PVC,variable
+DVA,PVP,variable
+DVA,RIA,developmentally dynamic (strengthened)
+DVA,RIB,variable
+DVA,RIC,variable
+DVA,RIG,variable
+DVA,RIH,variable
+DVA,RIM,variable
+DVA,RIP,variable
+DVA,RIR,stable
+DVA,RMF,post-embryonic brain integration
+DVA,SDQ,post-embryonic brain integration
+DVA,SIAD,variable
+DVA,SIAV,variable
+DVA,SIBV,variable
+DVA,SMBD,developmentally dynamic (strengthened)
+DVA,SMBV,developmentally dynamic (strengthened)
+DVA,URX,variable
+DVA,URYD,variable
+DVA,URYV,variable
+DVC,ADE,variable
+DVC,AIB,stable
+DVC,AIZ,variable
+DVC,AQR,post-embryonic brain integration
+DVC,AVA,stable
+DVC,AVD,variable
+DVC,AVE,variable
+DVC,AVK,developmentally dynamic (strengthened)
+DVC,AVL,variable
+DVC,BAG,variable
+DVC,CEPshD,variable
+DVC,CEPshV,variable
+DVC,FLP,variable
+DVC,IL2V,variable
+DVC,OLL,variable
+DVC,PVT,variable
+DVC,RIB,stable
+DVC,RID,variable
+DVC,RIG,stable
+DVC,RIM,variable
+DVC,RIV,variable
+DVC,RMF,post-embryonic brain integration
+DVC,SAAV,variable
+DVC,URAV,variable
+DVC,URX,variable
+DVC,URYD,variable
+DVC,URYV,variable
+FLP,ADA,variable
+FLP,ADE,stable
+FLP,AIB,developmentally dynamic (strengthened)
+FLP,AVA,stable
+FLP,AVB,stable
+FLP,AVD,stable
+FLP,AVE,developmentally dynamic (strengthened)
+FLP,AVJ,variable
+FLP,AVL,variable
+FLP,DVA,variable
+FLP,DVC,variable
+FLP,FLP,stable
+FLP,PVC,stable
+FLP,PVP,variable
+FLP,RIH,variable
+FLP,RIS,variable
+FLP,SDQ,post-embryonic brain integration
+HSN,ADL,post-embryonic brain integration
+HSN,AIA,post-embryonic brain integration
+HSN,AIZ,post-embryonic brain integration
+HSN,ALM,post-embryonic brain integration
+HSN,AQR,post-embryonic brain integration
+HSN,ASE,post-embryonic brain integration
+HSN,ASH,post-embryonic brain integration
+HSN,ASK,post-embryonic brain integration
+HSN,AVA,post-embryonic brain integration
+HSN,AVB,post-embryonic brain integration
+HSN,AVD,post-embryonic brain integration
+HSN,AVF,post-embryonic brain integration
+HSN,AVH,post-embryonic brain integration
+HSN,AVJ,post-embryonic brain integration
+HSN,AVM,post-embryonic brain integration
+HSN,AWA,post-embryonic brain integration
+HSN,AWB,post-embryonic brain integration
+HSN,BDU,post-embryonic brain integration
+HSN,HSN,post-embryonic brain integration
+HSN,PVN,post-embryonic brain integration
+HSN,PVQ,post-embryonic brain integration
+HSN,RIF,post-embryonic brain integration
+HSN,RIM,post-embryonic brain integration
+HSN,RMG,post-embryonic brain integration
+IL1D,BWM01D,stable
+IL1D,BWM02D,stable
+IL1D,BWM03D,variable
+IL1D,BWM04D,developmentally dynamic (strengthened)
+IL1D,GLRD,variable
+IL1D,IL1L/R,variable
+IL1D,OLL,variable
+IL1D,PVR,developmentally dynamic (strengthened)
+IL1D,RIP,stable
+IL1D,RMDD,variable
+IL1D,RMDV,stable
+IL1D,RMEL/R,stable
+IL1D,URAD,variable
+IL1L/R,AVE,developmentally dynamic (strengthened)
+IL1L/R,BWM01D,variable
+IL1L/R,BWM01V,variable
+IL1L/R,BWM02D,stable
+IL1L/R,BWM02V,stable
+IL1L/R,BWM04D,developmentally dynamic (strengthened)
+IL1L/R,BWM04V,variable
+IL1L/R,GLRL/R,variable
+IL1L/R,IL1D,variable
+IL1L/R,IL1V,variable
+IL1L/R,OLL,variable
+IL1L/R,RIP,variable
+IL1L/R,RIS,variable
+IL1L/R,RMDD,stable
+IL1L/R,RMDL/R,stable
+IL1L/R,RMDV,stable
+IL1L/R,RMED/V,variable
+IL1L/R,RMEL/R,variable
+IL1L/R,RMF,post-embryonic brain integration
+IL1L/R,RMG,variable
+IL1L/R,RMH,post-embryonic brain integration
+IL1L/R,URAD,variable
+IL1L/R,URAV,variable
+IL1V,BWM01V,stable
+IL1V,BWM02V,stable
+IL1V,BWM03V,variable
+IL1V,BWM04V,variable
+IL1V,GLRL/R,variable
+IL1V,IL1L/R,variable
+IL1V,PVR,variable
+IL1V,RIP,stable
+IL1V,RMDD,stable
+IL1V,RMDV,variable
+IL1V,RMED/V,variable
+IL1V,RMEL/R,stable
+IL1V,URAV,variable
+IL2D,ADA,variable
+IL2D,ASI,variable
+IL2D,AVE,variable
+IL2D,AWC,variable
+IL2D,BWM01D,variable
+IL2D,BWM02D,variable
+IL2D,BWM03D,variable
+IL2D,CEPD,variable
+IL2D,CEPshD,variable
+IL2D,GLRD,variable
+IL2D,GLRL/R,variable
+IL2D,IL1D,developmentally dynamic (strengthened)
+IL2D,IL2L/R,variable
+IL2D,OLQD,developmentally dynamic (strengthened)
+IL2D,RIC,variable
+IL2D,RIG,variable
+IL2D,RIH,variable
+IL2D,RIP,stable
+IL2D,RMDV,variable
+IL2D,RMED/V,stable
+IL2D,RMEL/R,stable
+IL2D,RMH,post-embryonic brain integration
+IL2D,URAD,stable
+IL2D,URYD,variable
+IL2L/R,ADE,developmentally dynamic (strengthened)
+IL2L/R,ADL,variable
+IL2L/R,AWC,variable
+IL2L/R,BWM02V,variable
+IL2L/R,BWM04V,variable
+IL2L/R,CEPD,variable
+IL2L/R,GLRL/R,variable
+IL2L/R,IL1D,variable
+IL2L/R,IL1L/R,variable
+IL2L/R,IL1V,variable
+IL2L/R,IL2V,variable
+IL2L/R,OLL,variable
+IL2L/R,OLQD,stable
+IL2L/R,OLQV,stable
+IL2L/R,RIC,variable
+IL2L/R,RIH,stable
+IL2L/R,RMDL/R,variable
+IL2L/R,RMED/V,variable
+IL2L/R,RMEL/R,variable
+IL2L/R,RMH,post-embryonic brain integration
+IL2L/R,SIBD,variable
+IL2L/R,SMBV,variable
+IL2L/R,URAD,variable
+IL2L/R,URAV,variable
+IL2L/R,URB,variable
+IL2L/R,URX,variable
+IL2V,AIB,variable
+IL2V,BAG,variable
+IL2V,BWM01V,variable
+IL2V,CEPV,variable
+IL2V,GLRV,variable
+IL2V,IL1V,developmentally dynamic (strengthened)
+IL2V,IL2L/R,variable
+IL2V,OLQV,developmentally dynamic (strengthened)
+IL2V,RIA,developmentally dynamic (strengthened)
+IL2V,RIB,variable
+IL2V,RIH,variable
+IL2V,RIP,stable
+IL2V,RMDD,variable
+IL2V,RMDV,variable
+IL2V,RMED/V,stable
+IL2V,RMEL/R,stable
+IL2V,URAV,stable
+IL2V,URX,variable
+IL2V,URYV,variable
+OLL,ADE,variable
+OLL,AVE,stable
+OLL,BWM03V,variable
+OLL,CEPD,stable
+OLL,CEPV,stable
+OLL,IL1D,developmentally dynamic (strengthened)
+OLL,IL1L/R,developmentally dynamic (strengthened)
+OLL,IL1V,developmentally dynamic (strengthened)
+OLL,IL2L/R,variable
+OLL,OLL,variable
+OLL,OLQV,variable
+OLL,RIB,stable
+OLL,RIS,variable
+OLL,RMDD,developmentally dynamic (strengthened)
+OLL,RMDL/R,developmentally dynamic (strengthened)
+OLL,RMDV,stable
+OLL,RMED/V,variable
+OLL,RMEL/R,developmentally dynamic (strengthened)
+OLL,RMG,variable
+OLL,SMDD,stable
+OLL,SMDV,stable
+OLL,URX,variable
+OLL,URYV,variable
+OLQD,AVA,variable
+OLQD,CEPD,variable
+OLQD,IL1D,variable
+OLQD,IL2D,variable
+OLQD,IL2L/R,stable
+OLQD,RIC,stable
+OLQD,RIH,variable
+OLQD,RMDD,stable
+OLQD,RMDV,variable
+OLQD,RMED/V,variable
+OLQD,RMEL/R,variable
+OLQD,RMH,post-embryonic brain integration
+OLQD,SIAD,variable
+OLQD,SIBV,stable
+OLQD,SMBD,variable
+OLQD,URAD,variable
+OLQD,URYD,variable
+OLQV,IL1V,variable
+OLQV,IL2L/R,stable
+OLQV,IL2V,variable
+OLQV,PVP,variable
+OLQV,RIC,variable
+OLQV,RIG,variable
+OLQV,RIH,variable
+OLQV,RMDD,variable
+OLQV,RMDV,stable
+OLQV,RMED/V,variable
+OLQV,RMEL/R,variable
+OLQV,RMH,post-embryonic brain integration
+OLQV,SIBD,stable
+OLQV,SMBV,variable
+OLQV,URB,variable
+PLN,AVB,post-embryonic brain integration
+PLN,BWM03V,post-embryonic brain integration
+PLN,RID,post-embryonic brain integration
+PLN,RMG,post-embryonic brain integration
+PLN,SAAD,post-embryonic brain integration
+PLN,SAAV,post-embryonic brain integration
+PLN,SMBV,post-embryonic brain integration
+PLN,SMDV,post-embryonic brain integration
+PVC,ADA,variable
+PVC,ADE,variable
+PVC,AQR,post-embryonic brain integration
+PVC,AVA,stable
+PVC,AVB,stable
+PVC,AVD,stable
+PVC,AVE,stable
+PVC,AVH,variable
+PVC,AVJ,developmentally dynamic (strengthened)
+PVC,AVK,variable
+PVC,BDU,variable
+PVC,DVA,variable
+PVC,FLP,variable
+PVC,PVC,variable
+PVC,RID,stable
+PVC,RIH,variable
+PVC,RIS,variable
+PVC,SAAV,variable
+PVC,SDQ,post-embryonic brain integration
+PVC,SIAV,variable
+PVC,SIBD,variable
+PVC,SIBV,variable
+PVC,SMBD,variable
+PVN,AIA,post-embryonic brain integration
+PVN,AIZ,post-embryonic brain integration
+PVN,ALM,post-embryonic brain integration
+PVN,ASJ,post-embryonic brain integration
+PVN,AVB,post-embryonic brain integration
+PVN,AVD,post-embryonic brain integration
+PVN,AVE,post-embryonic brain integration
+PVN,AVF,post-embryonic brain integration
+PVN,AVJ,post-embryonic brain integration
+PVN,AVM,post-embryonic brain integration
+PVN,BDU,post-embryonic brain integration
+PVN,CEPV,post-embryonic brain integration
+PVN,CEPshV,post-embryonic brain integration
+PVN,HSN,post-embryonic brain integration
+PVN,PVN,post-embryonic brain integration
+PVN,RIF,post-embryonic brain integration
+PVN,RMG,post-embryonic brain integration
+PVN,SDQ,post-embryonic brain integration
+PVN,SMBV,post-embryonic brain integration
+PVP,ADA,variable
+PVP,AIB,variable
+PVP,AQR,post-embryonic brain integration
+PVP,ASH,variable
+PVP,AVA,stable
+PVP,AVB,stable
+PVP,AVD,variable
+PVP,AVE,variable
+PVP,AVF,post-embryonic brain integration
+PVP,AVH,variable
+PVP,AVJ,variable
+PVP,AVK,variable
+PVP,DVA,variable
+PVP,DVC,variable
+PVP,PVC,stable
+PVP,RIA,variable
+PVP,RID,variable
+PVP,RIF,variable
+PVP,RIG,variable
+PVP,RIR,variable
+PVP,RIS,variable
+PVP,RMF,post-embryonic brain integration
+PVP,SAAD,variable
+PVP,SIAD,variable
+PVP,SMBD,variable
+PVP,URX,variable
+PVP,URYV,variable
+PVQ,ADA,variable
+PVQ,ADL,variable
+PVQ,AIA,stable
+PVQ,AIB,variable
+PVQ,AIM,variable
+PVQ,ALA,variable
+PVQ,ASE,variable
+PVQ,ASG,variable
+PVQ,ASH,variable
+PVQ,ASJ,stable
+PVQ,ASK,stable
+PVQ,AVF,post-embryonic brain integration
+PVQ,AVM,post-embryonic brain integration
+PVQ,AWA,variable
+PVQ,CEPV,variable
+PVQ,CEPshD,variable
+PVQ,CEPshV,variable
+PVQ,HSN,post-embryonic brain integration
+PVQ,PVC,variable
+PVQ,PVN,post-embryonic brain integration
+PVQ,RIF,variable
+PVQ,RMG,variable
+PVR,AVB,stable
+PVR,AVD,variable
+PVR,AVJ,stable
+PVR,BDU,variable
+PVR,CEPD,variable
+PVR,CEPV,variable
+PVR,IL1D,variable
+PVR,IL1V,variable
+PVR,RIP,stable
+PVR,RIV,variable
+PVR,SIBV,variable
+PVR,URAD,variable
+PVR,URYV,variable
+PVT,AIB,stable
+PVT,AVE,variable
+PVT,AVK,stable
+PVT,AVL,developmentally dynamic (strengthened)
+PVT,CEPshD,variable
+PVT,CEPshV,variable
+PVT,DVC,variable
+PVT,IL1V,variable
+PVT,IL2V,variable
+PVT,OLL,variable
+PVT,OLQV,variable
+PVT,RID,variable
+PVT,RIG,stable
+PVT,RIH,variable
+PVT,RIM,variable
+PVT,RIR,variable
+PVT,RMED/V,variable
+PVT,RMF,post-embryonic brain integration
+PVT,SAAD,variable
+PVT,SMBD,variable
+PVT,SMBV,variable
+PVT,URAV,variable
+PVT,URB,variable
+PVT,URYV,variable
+RIA,CEPD,stable
+RIA,CEPV,stable
+RIA,GLRV,variable
+RIA,IL1L/R,variable
+RIA,OLQD,variable
+RIA,RIA,stable
+RIA,RIC,variable
+RIA,RIV,developmentally dynamic (strengthened)
+RIA,RMDD,stable
+RIA,RMDL/R,stable
+RIA,RMDV,stable
+RIA,RMF,post-embryonic brain integration
+RIA,RMH,post-embryonic brain integration
+RIA,SDQ,post-embryonic brain integration
+RIA,SIAD,stable
+RIA,SIAV,stable
+RIA,SIBD,variable
+RIA,SMBD,variable
+RIA,SMBV,variable
+RIA,SMDD,stable
+RIA,SMDV,stable
+RIB,AIB,stable
+RIB,AIZ,variable
+RIB,AUA,variable
+RIB,AVA,stable
+RIB,AVB,variable
+RIB,AVD,stable
+RIB,AVE,stable
+RIB,AWB,variable
+RIB,BAG,stable
+RIB,CEPD,variable
+RIB,CEPV,variable
+RIB,CEPshV,variable
+RIB,DVA,variable
+RIB,OLL,variable
+RIB,OLQV,variable
+RIB,RIA,stable
+RIB,RID,variable
+RIB,RIG,variable
+RIB,RIH,variable
+RIB,RIM,variable
+RIB,RIS,stable
+RIB,RMDL/R,variable
+RIB,RMF,post-embryonic brain integration
+RIB,SMDD,variable
+RIB,SMDV,stable
+RIB,URYD,variable
+RIB,URYV,variable
+RIC,ADA,stable
+RIC,AIB,variable
+RIC,AVA,stable
+RIC,AVB,variable
+RIC,AVD,variable
+RIC,BWM04V,variable
+RIC,CEPD,variable
+RIC,CEPV,variable
+RIC,PVC,variable
+RIC,RIC,variable
+RIC,RIM,developmentally dynamic (strengthened)
+RIC,RIS,variable
+RIC,RIV,variable
+RIC,RMDD,variable
+RIC,RMDL/R,variable
+RIC,RMG,variable
+RIC,RMH,post-embryonic brain integration
+RIC,SAAD,variable
+RIC,SAAV,variable
+RIC,SIBD,variable
+RIC,SIBV,variable
+RIC,SMBD,variable
+RIC,SMDD,stable
+RIC,SMDV,variable
+RIC,URB,variable
+RIC,URX,variable
+RIC,URYV,variable
+RIF,ADA,variable
+RIF,AIA,variable
+RIF,AIB,variable
+RIF,AIM,variable
+RIF,ALM,variable
+RIF,AQR,post-embryonic brain integration
+RIF,ASH,developmentally dynamic (weakened)
+RIF,AUA,variable
+RIF,AVB,stable
+RIF,AVD,variable
+RIF,AVE,variable
+RIF,AVF,post-embryonic brain integration
+RIF,AVH,developmentally dynamic (strengthened)
+RIF,AVJ,stable
+RIF,BDU,variable
+RIF,CEPshV,variable
+RIF,HSN,post-embryonic brain integration
+RIF,PVC,variable
+RIF,PVN,post-embryonic brain integration
+RIF,PVP,variable
+RIF,PVQ,variable
+RIF,RIM,stable
+RIF,RMG,variable
+RIF,SDQ,post-embryonic brain integration
+RIF,URX,variable
+RIG,ADE,variable
+RIG,ADF,variable
+RIG,AIB,stable
+RIG,AIZ,stable
+RIG,ALN,post-embryonic brain integration
+RIG,ASH,variable
+RIG,AVB,variable
+RIG,AVD,variable
+RIG,AVE,stable
+RIG,AVH,variable
+RIG,AVK,stable
+RIG,BAG,stable
+RIG,CEPshV,variable
+RIG,DVC,variable
+RIG,IL1D,variable
+RIG,OLQD,variable
+RIG,OLQV,stable
+RIG,PLN,post-embryonic brain integration
+RIG,PVP,variable
+RIG,PVQ,variable
+RIG,PVT,variable
+RIG,RIA,stable
+RIG,RIB,stable
+RIG,RIG,variable
+RIG,RIM,variable
+RIG,RIR,stable
+RIG,RIV,variable
+RIG,RMEL/R,variable
+RIG,RMF,post-embryonic brain integration
+RIG,RMG,stable
+RIG,RMH,post-embryonic brain integration
+RIG,SAAD,variable
+RIG,URX,variable
+RIG,URYD,variable
+RIG,URYV,developmentally dynamic (weakened)
+RIH,ADF,variable
+RIH,AIY,variable
+RIH,AIZ,stable
+RIH,AUA,variable
+RIH,AVE,variable
+RIH,BAG,variable
+RIH,BWM01V,variable
+RIH,CEPD,stable
+RIH,CEPV,variable
+RIH,CEPshD,variable
+RIH,CEPshV,variable
+RIH,GLRD,variable
+RIH,GLRL/R,variable
+RIH,GLRV,variable
+RIH,IL1V,variable
+RIH,IL2D,variable
+RIH,IL2L/R,variable
+RIH,IL2V,variable
+RIH,OLQD,stable
+RIH,OLQV,stable
+RIH,RIA,stable
+RIH,RIB,stable
+RIH,RIG,variable
+RIH,RIP,stable
+RIH,RIR,variable
+RIH,RIS,variable
+RIH,RMED/V,variable
+RIH,RMEL/R,variable
+RIH,URAD,variable
+RIH,URAV,variable
+RIH,URYV,variable
+RIM,ADA,variable
+RIM,AIB,stable
+RIM,AIZ,variable
+RIM,AUA,variable
+RIM,AVA,variable
+RIM,AVB,stable
+RIM,AVD,variable
+RIM,AVE,developmentally dynamic (strengthened)
+RIM,AVH,variable
+RIM,AVJ,variable
+RIM,AVK,variable
+RIM,BWM04D,stable
+RIM,BWM04V,stable
+RIM,BWM06D,variable
+RIM,BWM06V,variable
+RIM,BWM08D,variable
+RIM,BWM08V,variable
+RIM,CEPV,variable
+RIM,OLL,variable
+RIM,PVC,variable
+RIM,RIA,variable
+RIM,RIB,stable
+RIM,RIF,variable
+RIM,RIG,variable
+RIM,RIM,variable
+RIM,RIS,stable
+RIM,RIV,variable
+RIM,RMDL/R,stable
+RIM,RMED/V,variable
+RIM,RMF,post-embryonic brain integration
+RIM,RMG,variable
+RIM,SAAD,stable
+RIM,SAAV,stable
+RIM,SIAD,variable
+RIM,SIBD,variable
+RIM,SIBV,variable
+RIM,SMDD,stable
+RIM,SMDV,stable
+RIP,IL2D,variable
+RIP,RIH,variable
+RIP,RIP,variable
+RIR,ADF,developmentally dynamic (strengthened)
+RIR,AIY,variable
+RIR,AIZ,stable
+RIR,AQR,post-embryonic brain integration
+RIR,AUA,variable
+RIR,AVA,variable
+RIR,AVE,variable
+RIR,AVH,variable
+RIR,BAG,variable
+RIR,CEPshV,variable
+RIR,DVA,stable
+RIR,OLQV,variable
+RIR,PVP,variable
+RIR,RIA,stable
+RIR,RIG,variable
+RIR,RIH,variable
+RIR,SMBV,variable
+RIR,URX,stable
+RIR,URYV,variable
+RIS,AIB,variable
+RIS,AVE,stable
+RIS,AVK,developmentally dynamic (strengthened)
+RIS,AVL,variable
+RIS,CEPD,stable
+RIS,CEPV,stable
+RIS,CEPshD,variable
+RIS,OLL,variable
+RIS,OLQD,variable
+RIS,RIB,stable
+RIS,RIC,variable
+RIS,RIM,stable
+RIS,RIV,variable
+RIS,RMDL/R,stable
+RIS,RMED/V,variable
+RIS,RMF,post-embryonic brain integration
+RIS,RMG,variable
+RIS,SMDD,stable
+RIS,SMDV,variable
+RIS,URYD,variable
+RIS,URYV,variable
+RIV,AVA,variable
+RIV,BWM03V,variable
+RIV,BWM04V,variable
+RIV,BWM05V,developmentally dynamic (strengthened)
+RIV,BWM06V,developmentally dynamic (strengthened)
+RIV,BWM07V,developmentally dynamic (strengthened)
+RIV,BWM08V,developmentally dynamic (strengthened)
+RIV,CEPshV,variable
+RIV,GLRD,variable
+RIV,GLRV,developmentally dynamic (weakened)
+RIV,RIA,stable
+RIV,RIC,variable
+RIV,RIH,variable
+RIV,RIM,variable
+RIV,RIR,variable
+RIV,RIS,variable
+RIV,RMDD,stable
+RIV,RMDL/R,variable
+RIV,RMDV,variable
+RIV,RMG,variable
+RIV,SAAD,stable
+RIV,SDQ,post-embryonic brain integration
+RIV,SIAV,developmentally dynamic (strengthened)
+RIV,SMBV,variable
+RIV,SMDD,stable
+RIV,SMDV,stable
+RMDD,BWM01D,stable
+RMDD,BWM02D,stable
+RMDD,BWM03D,stable
+RMDD,BWM04D,stable
+RMDD,BWM04V,variable
+RMDD,BWM05D,developmentally dynamic (strengthened)
+RMDD,BWM06D,variable
+RMDD,BWM07D,developmentally dynamic (strengthened)
+RMDD,IL1D,variable
+RMDD,IL1L/R,variable
+RMDD,RMDD,variable
+RMDD,RMDL/R,variable
+RMDD,RMDV,stable
+RMDD,RMED/V,developmentally dynamic (strengthened)
+RMDD,RMEL/R,variable
+RMDD,SMBD,variable
+RMDD,URAD,variable
+RMDD,URYD,variable
+RMDL/R,ADE,variable
+RMDL/R,AVE,variable
+RMDL/R,BWM02D,stable
+RMDL/R,BWM02V,stable
+RMDL/R,BWM04D,stable
+RMDL/R,BWM04V,developmentally dynamic (strengthened)
+RMDL/R,BWM06D,variable
+RMDL/R,BWM06V,developmentally dynamic (strengthened)
+RMDL/R,BWM08D,developmentally dynamic (strengthened)
+RMDL/R,CEPV,variable
+RMDL/R,GLRL/R,variable
+RMDL/R,IL1L/R,stable
+RMDL/R,IL2L/R,variable
+RMDL/R,OLL,variable
+RMDL/R,RIA,stable
+RMDL/R,RIM,variable
+RMDL/R,RIV,variable
+RMDL/R,RMDD,stable
+RMDL/R,RMDL/R,stable
+RMDL/R,RMDV,stable
+RMDL/R,RMEL/R,developmentally dynamic (strengthened)
+RMDL/R,RMF,post-embryonic brain integration
+RMDL/R,RMG,variable
+RMDL/R,RMH,post-embryonic brain integration
+RMDL/R,SIAV,variable
+RMDL/R,SIBD,variable
+RMDL/R,SMBV,variable
+RMDL/R,SMDD,variable
+RMDL/R,SMDV,variable
+RMDV,BWM01V,stable
+RMDV,BWM02D,variable
+RMDV,BWM02V,stable
+RMDV,BWM03V,stable
+RMDV,BWM04V,stable
+RMDV,BWM05V,developmentally dynamic (strengthened)
+RMDV,BWM06V,developmentally dynamic (strengthened)
+RMDV,BWM07V,developmentally dynamic (strengthened)
+RMDV,GLRV,variable
+RMDV,IL1V,variable
+RMDV,RMDD,stable
+RMDV,RMDV,variable
+RMDV,RMED/V,developmentally dynamic (strengthened)
+RMDV,SIBD,variable
+RMDV,SMBV,developmentally dynamic (strengthened)
+RMED/V,BWM01D,stable
+RMED/V,BWM01V,stable
+RMED/V,BWM02D,variable
+RMED/V,BWM03D,stable
+RMED/V,BWM03V,stable
+RMED/V,BWM05D,developmentally dynamic (strengthened)
+RMED/V,BWM05V,developmentally dynamic (strengthened)
+RMED/V,CEPD,variable
+RMED/V,RMDD,developmentally dynamic (weakened)
+RMED/V,RMDV,developmentally dynamic (weakened)
+RMED/V,RMED/V,variable
+RMED/V,RMEL/R,variable
+RMED/V,SMDD,stable
+RMED/V,SMDV,stable
+RMEL/R,BWM02D,stable
+RMEL/R,BWM02V,stable
+RMEL/R,BWM04D,developmentally dynamic (strengthened)
+RMEL/R,BWM04V,developmentally dynamic (strengthened)
+RMEL/R,GLRL/R,variable
+RMEL/R,GLRV,variable
+RMEL/R,IL1L/R,variable
+RMEL/R,RMDD,variable
+RMEL/R,RMEL/R,variable
+RMEL/R,URAD,variable
+RMEL/R,URAV,variable
+RMF,AIB,post-embryonic brain integration
+RMF,AVE,post-embryonic brain integration
+RMF,AVK,post-embryonic brain integration
+RMF,AWC,post-embryonic brain integration
+RMF,BAG,post-embryonic brain integration
+RMF,BWM02D,post-embryonic brain integration
+RMF,BWM02V,post-embryonic brain integration
+RMF,BWM04D,post-embryonic brain integration
+RMF,BWM04V,post-embryonic brain integration
+RMF,BWM06D,post-embryonic brain integration
+RMF,CEPD,post-embryonic brain integration
+RMF,CEPV,post-embryonic brain integration
+RMF,CEPshV,post-embryonic brain integration
+RMF,DVC,post-embryonic brain integration
+RMF,IL1L/R,post-embryonic brain integration
+RMF,PVT,post-embryonic brain integration
+RMF,RIB,post-embryonic brain integration
+RMF,RIG,post-embryonic brain integration
+RMF,RIM,post-embryonic brain integration
+RMF,RIS,post-embryonic brain integration
+RMF,RIV,post-embryonic brain integration
+RMF,RMDD,post-embryonic brain integration
+RMF,RMDL/R,post-embryonic brain integration
+RMF,RMDV,post-embryonic brain integration
+RMF,RMEL/R,post-embryonic brain integration
+RMF,RMF,post-embryonic brain integration
+RMF,RMG,post-embryonic brain integration
+RMF,RMH,post-embryonic brain integration
+RMF,SAAD,post-embryonic brain integration
+RMG,ADA,variable
+RMG,AIB,variable
+RMG,AIM,developmentally dynamic (strengthened)
+RMG,ALM,variable
+RMG,ALN,post-embryonic brain integration
+RMG,ASH,variable
+RMG,AVA,variable
+RMG,AVB,developmentally dynamic (strengthened)
+RMG,AVE,developmentally dynamic (strengthened)
+RMG,AVF,post-embryonic brain integration
+RMG,AVJ,variable
+RMG,AVK,variable
+RMG,BWM02D,variable
+RMG,BWM04D,variable
+RMG,BWM04V,developmentally dynamic (strengthened)
+RMG,BWM06D,developmentally dynamic (strengthened)
+RMG,BWM06V,developmentally dynamic (strengthened)
+RMG,BWM08D,developmentally dynamic (strengthened)
+RMG,BWM08V,developmentally dynamic (strengthened)
+RMG,CEPD,variable
+RMG,HSN,post-embryonic brain integration
+RMG,IL1L/R,variable
+RMG,IL2L/R,variable
+RMG,PLN,post-embryonic brain integration
+RMG,PVC,variable
+RMG,PVN,post-embryonic brain integration
+RMG,PVP,variable
+RMG,RIA,variable
+RMG,RID,variable
+RMG,RIF,variable
+RMG,RIG,variable
+RMG,RMDD,variable
+RMG,RMDL/R,stable
+RMG,RMDV,stable
+RMG,RMG,variable
+RMG,RMH,post-embryonic brain integration
+RMG,SAAD,variable
+RMG,SAAV,variable
+RMG,SDQ,post-embryonic brain integration
+RMG,SIAD,variable
+RMG,SIAV,variable
+RMG,SIBD,developmentally dynamic (strengthened)
+RMG,SIBV,variable
+RMG,SMBD,variable
+RMG,SMBV,variable
+RMG,SMDD,variable
+RMG,URX,variable
+RMH,AVK,post-embryonic brain integration
+RMH,BWM02D,post-embryonic brain integration
+RMH,BWM02V,post-embryonic brain integration
+RMH,BWM04D,post-embryonic brain integration
+RMH,BWM04V,post-embryonic brain integration
+RMH,BWM06D,post-embryonic brain integration
+RMH,CEPD,post-embryonic brain integration
+RMH,IL1L/R,post-embryonic brain integration
+RMH,RIG,post-embryonic brain integration
+RMH,RMDD,post-embryonic brain integration
+RMH,RMDL/R,post-embryonic brain integration
+RMH,RMF,post-embryonic brain integration
+RMH,RMG,post-embryonic brain integration
+RMH,RMH,post-embryonic brain integration
+SAAD,AVA,stable
+SAAD,AVE,variable
+SAAD,OLL,variable
+SAAD,RIM,stable
+SAAD,RMF,post-embryonic brain integration
+SAAD,RMG,variable
+SAAD,SMDV,stable
+SAAV,AIB,variable
+SAAV,AVA,stable
+SAAV,AVB,variable
+SAAV,OLL,variable
+SAAV,RIA,variable
+SAAV,RIG,variable
+SAAV,RIM,stable
+SAAV,RMF,post-embryonic brain integration
+SAAV,SAAD,variable
+SAAV,SMDD,stable
+SDQ,AIB,post-embryonic brain integration
+SDQ,ALM,post-embryonic brain integration
+SDQ,AVA,post-embryonic brain integration
+SDQ,AVB,post-embryonic brain integration
+SDQ,AVE,post-embryonic brain integration
+SDQ,BDU,post-embryonic brain integration
+SDQ,DVA,post-embryonic brain integration
+SDQ,FLP,post-embryonic brain integration
+SDQ,IL1L/R,post-embryonic brain integration
+SDQ,PVC,post-embryonic brain integration
+SDQ,PVR,post-embryonic brain integration
+SDQ,RIA,post-embryonic brain integration
+SDQ,RIC,post-embryonic brain integration
+SDQ,RIM,post-embryonic brain integration
+SDQ,RIS,post-embryonic brain integration
+SDQ,RIV,post-embryonic brain integration
+SDQ,RMG,post-embryonic brain integration
+SDQ,RMH,post-embryonic brain integration
+SDQ,SDQ,post-embryonic brain integration
+SDQ,SIBV,post-embryonic brain integration
+SDQ,SMBV,post-embryonic brain integration
+SDQ,SMDD,post-embryonic brain integration
+SDQ,URYV,post-embryonic brain integration
+SMBD,ADA,variable
+SMBD,ALN,post-embryonic brain integration
+SMBD,AVA,variable
+SMBD,AVB,variable
+SMBD,BWM01D,stable
+SMBD,BWM02D,stable
+SMBD,BWM03D,stable
+SMBD,BWM04D,stable
+SMBD,BWM05D,stable
+SMBD,BWM06D,developmentally dynamic (strengthened)
+SMBD,BWM07D,developmentally dynamic (strengthened)
+SMBD,BWM08D,variable
+SMBD,CEPshD,variable
+SMBD,GLRD,variable
+SMBD,GLRL/R,variable
+SMBD,RMDD,variable
+SMBD,RMDV,variable
+SMBD,RMED/V,stable
+SMBD,RMH,post-embryonic brain integration
+SMBD,SAAV,stable
+SMBD,SIAD,variable
+SMBD,SIBD,variable
+SMBD,SIBV,variable
+SMBD,SMBD,variable
+SMBD,SMDD,variable
+SMBV,BWM01V,stable
+SMBV,BWM02V,stable
+SMBV,BWM03V,stable
+SMBV,BWM04V,stable
+SMBV,BWM05V,developmentally dynamic (strengthened)
+SMBV,BWM06V,developmentally dynamic (strengthened)
+SMBV,BWM07V,developmentally dynamic (strengthened)
+SMBV,BWM08V,variable
+SMBV,CEPV,variable
+SMBV,CEPshV,variable
+SMBV,GLRL/R,variable
+SMBV,PLN,post-embryonic brain integration
+SMBV,RIH,variable
+SMBV,RMDV,stable
+SMBV,RMED/V,stable
+SMBV,RMF,post-embryonic brain integration
+SMBV,SAAD,stable
+SMBV,SAAV,variable
+SMBV,SIAV,variable
+SMBV,SIBD,variable
+SMBV,SMDV,variable
+SMDD,ALN,post-embryonic brain integration
+SMDD,BWM01D,stable
+SMDD,BWM03D,stable
+SMDD,BWM04D,variable
+SMDD,BWM05D,developmentally dynamic (strengthened)
+SMDD,BWM06D,variable
+SMDD,BWM07D,variable
+SMDD,BWM08D,variable
+SMDD,CEPD,variable
+SMDD,RIA,stable
+SMDD,RIM,developmentally dynamic (strengthened)
+SMDD,RIS,variable
+SMDD,RMDL/R,stable
+SMDD,RMDV,variable
+SMDD,RMED/V,variable
+SMDD,SIAD,variable
+SMDD,SMDV,stable
+SMDD,URYD,variable
+SMDV,BWM01V,stable
+SMDV,BWM03V,stable
+SMDV,BWM04V,variable
+SMDV,BWM05V,developmentally dynamic (strengthened)
+SMDV,BWM06V,variable
+SMDV,CEPV,variable
+SMDV,OLL,variable
+SMDV,RIA,stable
+SMDV,RIM,variable
+SMDV,RIS,variable
+SMDV,RMDD,variable
+SMDV,RMDL/R,variable
+SMDV,RMED/V,variable
+SMDV,SAAD,variable
+SMDV,SIAV,variable
+SMDV,SMDD,stable
+URAD,BWM01D,stable
+URAD,BWM02D,stable
+URAD,BWM02V,variable
+URAD,BWM03D,developmentally dynamic (strengthened)
+URAD,BWM04D,developmentally dynamic (strengthened)
+URAD,IL1D,stable
+URAD,IL1L/R,variable
+URAD,RIP,stable
+URAD,RMDD,variable
+URAD,RMDV,variable
+URAD,RMED/V,stable
+URAD,RMEL/R,stable
+URAV,BWM01V,stable
+URAV,BWM02D,variable
+URAV,BWM02V,stable
+URAV,BWM03V,developmentally dynamic (strengthened)
+URAV,BWM04V,developmentally dynamic (strengthened)
+URAV,GLRL/R,variable
+URAV,IL1L/R,variable
+URAV,IL1V,developmentally dynamic (strengthened)
+URAV,IL2L/R,variable
+URAV,IL2V,variable
+URAV,RIP,stable
+URAV,RMDD,variable
+URAV,RMDV,variable
+URAV,RMED/V,stable
+URAV,RMEL/R,stable
+URB,ADA,developmentally dynamic (strengthened)
+URB,ADE,variable
+URB,AVB,developmentally dynamic (strengthened)
+URB,AVD,variable
+URB,AVE,variable
+URB,AVJ,variable
+URB,BWM02D,variable
+URB,BWM02V,variable
+URB,BWM04D,variable
+URB,BWM04V,variable
+URB,BWM06D,variable
+URB,CEPD,stable
+URB,CEPV,variable
+URB,CEPshD,variable
+URB,CEPshV,variable
+URB,IL1L/R,stable
+URB,IL2L/R,developmentally dynamic (weakened)
+URB,OLL,variable
+URB,OLQD,variable
+URB,OLQV,variable
+URB,PVR,variable
+URB,RIB,variable
+URB,RIC,developmentally dynamic (strengthened)
+URB,RIV,variable
+URB,RMDD,variable
+URB,RMDL/R,variable
+URB,RMG,variable
+URB,RMH,post-embryonic brain integration
+URB,SDQ,post-embryonic brain integration
+URB,SIAD,variable
+URB,SIAV,variable
+URB,SMBD,variable
+URB,SMBV,variable
+URB,SMDD,variable
+URB,SMDV,variable
+URB,URX,stable
+URX,ADA,variable
+URX,AIB,variable
+URX,AQR,post-embryonic brain integration
+URX,AUA,stable
+URX,AVA,variable
+URX,AVB,variable
+URX,AVE,variable
+URX,AVH,variable
+URX,AVJ,variable
+URX,CEPV,variable
+URX,DVA,variable
+URX,IL1L/R,variable
+URX,IL2L/R,developmentally dynamic (strengthened)
+URX,OLQV,variable
+URX,PVP,variable
+URX,RIA,stable
+URX,RIC,stable
+URX,RIG,stable
+URX,RIR,stable
+URX,RMF,post-embryonic brain integration
+URX,RMG,variable
+URX,SIAD,variable
+URX,SMBD,variable
+URX,URAV,variable
+URX,URB,variable
+URYD,AVB,variable
+URYD,AVD,developmentally dynamic (strengthened)
+URYD,AVE,stable
+URYD,BWM01D,developmentally dynamic (strengthened)
+URYD,BWM02V,variable
+URYD,BWM03D,developmentally dynamic (strengthened)
+URYD,BWM05D,variable
+URYD,CEPD,variable
+URYD,IL1D,developmentally dynamic (strengthened)
+URYD,OLL,variable
+URYD,OLQD,variable
+URYD,RIB,stable
+URYD,RID,variable
+URYD,RMDD,stable
+URYD,RMDV,stable
+URYD,RMED/V,variable
+URYD,RMEL/R,variable
+URYD,SMDD,stable
+URYD,URAD,variable
+URYV,AIB,variable
+URYV,AVA,variable
+URYV,AVB,developmentally dynamic (strengthened)
+URYV,AVD,variable
+URYV,AVE,stable
+URYV,BWM01V,variable
+URYV,BWM03V,developmentally dynamic (strengthened)
+URYV,BWM05V,variable
+URYV,CEPshV,variable
+URYV,IL1V,developmentally dynamic (strengthened)
+URYV,OLL,variable
+URYV,RIA,variable
+URYV,RIB,stable
+URYV,RID,variable
+URYV,RIP,variable
+URYV,RIS,variable
+URYV,RMDD,stable
+URYV,RMDL/R,variable
+URYV,RMDV,stable
+URYV,SIBD,variable
+URYV,SIBV,developmentally dynamic (strengthened)
+URYV,SMDV,stable
