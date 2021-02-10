@@ -6,3 +6,4 @@ matplotlib_venn
 scipy
 statsmodels
 networkx
+jupyterlab
