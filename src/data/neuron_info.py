@@ -19,40 +19,29 @@ neuron_list = (
 
 def class_members(cls):
     if cls in (
-            'AVG', 'DVC', 'PVR', 'PVT', 'RIH', 'RIR', 'DVA', 'AQR', 'AVM',
-            'PQR',
-            'PVM', 'DVB', 'PDA', 'PDB', 'ALA', 'AVL', 'RID', 'RIS',
-            'I3', 'I4', 'I5', 'I5', 'M1', 'M4', 'M5', 'MI', 'SABD'
+        'AVG', 'DVC', 'PVR', 'PVT', 'RIH', 'RIR', 'DVA', 'AQR', 'AVM', 'PQR',
+        'PVM', 'DVB', 'PDA', 'PDB', 'ALA', 'AVL', 'RID', 'RIS',
+        'I3', 'I4', 'I5', 'I5', 'M1', 'M4', 'M5', 'MI', 'SABD'
     ):
         return [cls]
     if cls in (
-            'ADA', 'AIA', 'AIB', 'AIN', 'AIY', 'AIZ', 'BDU', 'LUA', 'PVN',
-            'PVP',
-            'PVW', 'RIA', 'RIB', 'RIF', 'RIG', 'RIM', 'RIP', 'AVA', 'AVD',
-            'AVE',
-            'AVB', 'PVC', 'ADL', 'AFD', 'ASE', 'ASG', 'ASH', 'ASI', 'ASJ',
-            'ASK',
-            'AUA', 'AWA', 'AWB', 'AWC', 'BAG', 'FLP', 'OLL', 'URB', 'RMG',
-            'PDE',
-            'ALM', 'ALN', 'PHA', 'PHB', 'PHC', 'PLM', 'PLN', 'PVD', 'SDQ',
-            'RIV',
-            'RMF', 'RMH', 'AIM', 'AVF', 'AVH', 'AVJ', 'AVK', 'PVQ', 'RIC',
-            'ADE',
-            'ADF', 'HSN', 'URX',
-            'I1', 'I2', 'M2', 'M3', 'MC', 'NSM',
-            'CAN',
-            'SAAD', 'SAAV', 'URYD', 'URYV', 'SMBD', 'SMBV', 'SMDD', 'SMDV',
-            'URAD',
-            'URAV', 'SIBD', 'SIBV', 'SIAD', 'SIAV', 'CEPD', 'CEPV', 'OLQD',
-            'OLQV',
-            'IL1D', 'IL1V', 'IL2D', 'IL2V', 'RMDD', 'RMDV', 'GLRD', 'GLRV',
-            'CEPshD',
-            'CEPshV', 'SABV'
+        'ADA', 'AIA', 'AIB', 'AIN', 'AIY', 'AIZ', 'BDU', 'LUA', 'PVN', 'PVP',
+        'PVW', 'RIA', 'RIB', 'RIF', 'RIG', 'RIM', 'RIP', 'AVA', 'AVD', 'AVE',
+        'AVB', 'PVC', 'ADL', 'AFD', 'ASE', 'ASG', 'ASH', 'ASI', 'ASJ', 'ASK',
+        'AUA', 'AWA', 'AWB', 'AWC', 'BAG', 'FLP', 'OLL', 'URB', 'RMG', 'PDE',
+        'ALM', 'ALN', 'PHA', 'PHB', 'PHC', 'PLM', 'PLN', 'PVD', 'SDQ', 'RIV',
+        'RMF', 'RMH', 'AIM', 'AVF', 'AVH', 'AVJ', 'AVK', 'PVQ', 'RIC', 'ADE',
+        'ADF', 'HSN', 'URX',
+        'I1', 'I2', 'M2', 'M3', 'MC', 'NSM',
+        'CAN',
+        'SAAD', 'SAAV', 'URYD', 'URYV', 'SMBD', 'SMBV', 'SMDD', 'SMDV', 'URAD',
+        'URAV', 'SIBD', 'SIBV', 'SIAD', 'SIAV', 'CEPD', 'CEPV', 'OLQD', 'OLQV',
+        'IL1D', 'IL1V', 'IL2D', 'IL2V', 'RMDD', 'RMDV', 'GLRD', 'GLRV', 'CEPshD',
+        'CEPshV', 'SABV'
     ):
         return [cls + n for n in ('L', 'R')]
     if cls in (
-            'SAA', 'URY', 'SMB', 'SMD', 'URA', 'SIB', 'SIA', 'CEP', 'OLQ',
-            'CEPsh'
+        'SAA', 'URY', 'SMB', 'SMD', 'URA', 'SIB', 'SIA', 'CEP', 'OLQ', 'CEPsh'
     ):
         return [cls + n for n in ('DL', 'DR', 'VL', 'VR')]
     if cls in ('IL1', 'IL2', 'RMD', 'GLR'):
@@ -79,21 +68,18 @@ def class_members(cls):
 
     if cls == 'muscle':
         return ['muscle'] + \
-               ['BWM-DL' + str(i + 1).zfill(2) for i in range(24)] + \
-               ['BWM-DR' + str(i + 1).zfill(2) for i in range(24)] + \
-               ['BWM-VL' + str(i + 1).zfill(2) for i in range(23)] + \
-               ['BWM-VR' + str(i + 1).zfill(2) for i in range(24)]
+           ['BWM-DL' + str(i + 1).zfill(2) for i in range(24)] + \
+           ['BWM-DR' + str(i + 1).zfill(2) for i in range(24)] + \
+           ['BWM-VL' + str(i + 1).zfill(2) for i in range(23)] + \
+           ['BWM-VR' + str(i + 1).zfill(2) for i in range(24)]
 
     if cls in (
-            'BWM01', 'BWM02', 'BWM03', 'BWM04', 'BWM05', 'BWM06', 'BWM07',
-            'BWM08',
+        'BWM01', 'BWM02', 'BWM03', 'BWM04', 'BWM05', 'BWM06', 'BWM07', 'BWM08',
     ):
         return ['BWM-' + n + cls[-2:] for n in ('DL', 'DR', 'VL', 'VR')]
     if cls in (
-            'BWM01D', 'BWM02D', 'BWM03D', 'BWM04D', 'BWM05D', 'BWM06D',
-            'BWM07D', 'BWM08D',
-            'BWM01V', 'BWM02V', 'BWM03V', 'BWM04V', 'BWM05V', 'BWM06V',
-            'BWM07V', 'BWM08V',
+        'BWM01D', 'BWM02D', 'BWM03D', 'BWM04D', 'BWM05D', 'BWM06D', 'BWM07D', 'BWM08D',
+        'BWM01V', 'BWM02V', 'BWM03V', 'BWM04V', 'BWM05V', 'BWM06V', 'BWM07V', 'BWM08V',
     ):
         return ['BWM-' + cls[-1] + n + cls[-3:-1] for n in ('L', 'R')]
 
@@ -106,38 +92,31 @@ def ntype(n):
         n = nclass(class_members(n)[0])
 
     if n in (
-            'ADF', 'ADL', 'AFD', 'ALM', 'ALN', 'AQR', 'ASE', 'ASG', 'ASH',
-            'ASI',
-            'ASJ', 'ASK', 'AUA', 'AVM', 'AWA', 'AWB', 'AWC', 'BAG', 'DVA',
-            'FLP',
-            'IL2', 'OLL', 'OLQ', 'PHA', 'PHB', 'PHC', 'PLM', 'PLN', 'PQR',
-            'PVD',
-            'PVM', 'SAA', 'SDQ', 'URB', 'URX', 'URY'
+        'ADF', 'ADL', 'AFD', 'ALM', 'ALN', 'AQR', 'ASE', 'ASG', 'ASH', 'ASI',
+        'ASJ', 'ASK', 'AUA', 'AVM', 'AWA', 'AWB', 'AWC', 'BAG', 'DVA', 'FLP',
+        'IL2', 'OLL', 'OLQ', 'PHA', 'PHB', 'PHC', 'PLM', 'PLN', 'PQR', 'PVD',
+        'PVM', 'SAA', 'SDQ', 'URB', 'URX', 'URY'
     ):
         return 'sensory'
     if n in (
-            'ADA', 'AIA', 'AIB', 'AIN', 'AIY', 'AIZ', 'AVA', 'AVB', 'AVD',
-            'AVE',
-            'AVG', 'BDU', 'LUA', 'PVC', 'PVP', 'PVR', 'PVT', 'PVW',
-            'RIA', 'RIB', 'RIF', 'RIG', 'RIH', 'RIM', 'RIR', 'RIP', 'AVJ',
+        'ADA', 'AIA', 'AIB', 'AIN', 'AIY', 'AIZ', 'AVA', 'AVB', 'AVD', 'AVE',
+        'AVG', 'BDU', 'LUA', 'PVC', 'PVP', 'PVR', 'PVT', 'PVW',
+        'RIA', 'RIB', 'RIF', 'RIG', 'RIH', 'RIM', 'RIR', 'RIP', 'AVJ',
     ):
         return 'inter'
     if n in (
-            'ASn', 'DAn', 'DBn', 'DDn', 'DVB', 'IL1', 'PDA', 'PDB', 'RIV',
-            'RMD',
-            'RME', 'RMF', 'RMH', 'SAB', 'SIA', 'SIB', 'SMB', 'SMD', 'URA',
-            'VAn',
-            'VBn', 'VCn', 'VDn',
+        'ASn', 'DAn', 'DBn', 'DDn', 'DVB', 'IL1', 'PDA', 'PDB', 'RIV', 'RMD',
+        'RME', 'RMF', 'RMH', 'SAB', 'SIA', 'SIB', 'SMB', 'SMD', 'URA', 'VAn',
+        'VBn', 'VCn', 'VDn',
     ):
         return 'motor'
     if n in (
-            'ADE', 'AIM', 'ALA', 'AVF', 'AVH', 'AVK', 'AVL', 'CEP', 'HSN',
-            'PDE', 'PVQ', 'PVN', 'RIC', 'RID', 'RIS', 'RMG', 'DVC',
+        'ADE', 'AIM', 'ALA', 'AVF', 'AVH', 'AVK', 'AVL', 'CEP', 'HSN',
+        'PDE', 'PVQ', 'PVN', 'RIC', 'RID', 'RIS', 'RMG', 'DVC',
     ):
         return 'modulatory'
     if n in (
-            'BWM01', 'BWM02', 'BWM03', 'BWM04', 'BWM05', 'BWM06', 'BWM07',
-            'BWM08'
+        'BWM01', 'BWM02', 'BWM03', 'BWM04', 'BWM05', 'BWM06', 'BWM07', 'BWM08'
     ):
         return 'muscle'
     if n in ('CAN', 'CEPsh', 'GLR', 'excgl', 'hyp'):
@@ -211,50 +190,43 @@ def in_brain(n):
 
 def npair(n):
     if n in (
-            'AVG', 'DVC', 'PVR', 'PVT', 'RIH', 'RIR', 'DVA', 'AQR', 'AVM',
-            'PQR',
-            'PVM', 'DVB', 'PDA', 'PDB', 'ALA', 'AVL', 'RID', 'RIS',
-            'I3', 'I4', 'I5', 'I5', 'M1', 'M4', 'M5', 'MI',
-            'SABD', 'excgl'
+        'AVG', 'DVC', 'PVR', 'PVT', 'RIH', 'RIR', 'DVA', 'AQR', 'AVM',
+        'PQR',
+        'PVM', 'DVB', 'PDA', 'PDB', 'ALA', 'AVL', 'RID', 'RIS',
+        'I3', 'I4', 'I5', 'I5', 'M1', 'M4', 'M5', 'MI',
+        'SABD', 'excgl'
     ):
         return n
     cls = nclass(n)
     if cls in (
-            'ADA', 'AIA', 'AIB', 'AIN', 'AIY', 'AIZ', 'BDU', 'LUA', 'PVN',
-            'PVP',
-            'PVW', 'RIA', 'RIB', 'RIF', 'RIG', 'RIM', 'RIP', 'AVA', 'AVD',
-            'AVE',
-            'AVB', 'PVC', 'ADL', 'AFD', 'ASE', 'ASG', 'ASH', 'ASI', 'ASJ',
-            'ASK',
-            'AUA', 'AWA', 'AWB', 'AWC', 'BAG', 'FLP', 'OLL', 'URB', 'RMG',
-            'PDE',
-            'ALM', 'ALN', 'PHA', 'PHB', 'PHC', 'PLM', 'PLN', 'PVD', 'SDQ',
-            'RIV',
-            'RMF', 'RMH', 'AIM', 'AVF', 'AVH', 'AVJ', 'AVK', 'PVQ', 'RIC',
-            'ADE',
-            'ADF', 'HSN', 'URX',
-            'I1', 'I2', 'M2', 'M3', 'MC', 'NSM',
-            'CAN'
+        'ADA', 'AIA', 'AIB', 'AIN', 'AIY', 'AIZ', 'BDU', 'LUA', 'PVN', 'PVP',
+        'PVW', 'RIA', 'RIB', 'RIF', 'RIG', 'RIM', 'RIP', 'AVA', 'AVD', 'AVE',
+        'AVB', 'PVC', 'ADL', 'AFD', 'ASE', 'ASG', 'ASH', 'ASI', 'ASJ', 'ASK',
+        'AUA', 'AWA', 'AWB', 'AWC', 'BAG', 'FLP', 'OLL', 'URB', 'RMG', 'PDE',
+        'ALM', 'ALN', 'PHA', 'PHB', 'PHC', 'PLM', 'PLN', 'PVD', 'SDQ', 'RIV',
+        'RMF', 'RMH', 'AIM', 'AVF', 'AVH', 'AVJ', 'AVK', 'PVQ', 'RIC', 'ADE',
+        'ADF', 'HSN', 'URX',
+        'I1', 'I2', 'M2', 'M3', 'MC', 'NSM',
+        'CAN'
     ):
         return cls
     if cls in (
-            'ASn', 'DAn', 'DBn', 'DDn', 'VAn', 'VBn', 'VCn', 'VDn'
+        'ASn', 'DAn', 'DBn', 'DDn', 'VAn', 'VBn', 'VCn', 'VDn'
     ):
         return n
     if cls in (
-            'SAA', 'URY', 'SMB', 'SMD', 'URA', 'SIB', 'SIA', 'CEP', 'OLQ',
-            'CEPsh'
+        'SAA', 'URY', 'SMB', 'SMD', 'URA', 'SIB', 'SIA', 'CEP', 'OLQ',
+        'CEPsh'
     ):
         return n[:-1]
     if n[:-1] in (
-            'SABV', 'IL1D', 'IL1V', 'IL2D', 'IL2V', 'RMDD', 'RMDV', 'GLRD',
-            'GLRV',
+        'SABV', 'IL1D', 'IL1V', 'IL2D', 'IL2V', 'RMDD', 'RMDV', 'GLRD',
+        'GLRV',
     ):
         return n[:-1]
     if n in (
-            'IL1L', 'IL1R', 'IL2L', 'IL2R', 'RMDL', 'RMDR', 'GLRL', 'GLRR',
-            'RMEL',
-            'RMER'
+        'IL1L', 'IL1R', 'IL2L', 'IL2R', 'RMDL', 'RMDR', 'GLRL', 'GLRR',
+        'RMEL', 'RMER'
     ):
         return n[:3] + 'L/R'
     if n in ('RMED', 'RMEV'):
