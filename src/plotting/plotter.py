@@ -1149,8 +1149,9 @@ class Plotter(object):
                 comparisons = stats
                 ps = [sc.stats.mannwhitneyu(box[x1-1], box[x2-1]).pvalue for x1, x2 in comparisons]
                 ps_corrected = fdrcorrection0(ps)[1]
-                print(ps_corrected)
-                print([len(b) for b in box])
+
+                print('Corrected p-values:', ps_corrected)
+                print('n:', [len(b) for b in box])
                 
                 self._stats(ax, y, comparisons, ps_corrected)
             
