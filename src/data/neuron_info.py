@@ -265,3 +265,14 @@ def is_postemb(n):
         'PHC', 'PLN', 'PQR', 'PVD', 'PVM', 'PVN', 'PVW', 'RMF', 'RMH', 'SDQ',
         'VAn', 'VBn', 'VCn', 'VDn'
     )
+
+
+dark_colors = {
+    'sensory': '#fda0fd',
+    'inter': '#ff442f',
+    'motor': '#5cafff',
+    'modulatory': '#ffc000',
+    'muscle': '#7ec95a',
+    'other': '#d9d9d9',
+    'nonvalid': '#000000',
+}
