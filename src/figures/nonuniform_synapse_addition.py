@@ -6,6 +6,7 @@ import scipy as sc
 from scipy.stats import linregress
 
 from src.data import data_manager
+from src.data.neuron_info import contralateral
 from src.data.dataset_info import all_datasets, datasets_with_adj, timepoint
 
 from src.plotting import plotter
@@ -29,7 +30,8 @@ class Figure(object):
         ]
 
         y_label = 'Connections between\ncells existing from birth'
-        self.plt.plot('xy_graph', (x, y),
+        self.plt.plot(
+            'xy_graph', (x, y),
             y_label=y_label, save=f+'_number_of_connections', ylim=(0, 2000),
             linkpoints=False, stats='regression_only', clipon=True,
             size=0.19, x_label='Developmental age',
@@ -49,8 +51,6 @@ class Figure(object):
 
         print('{:.2f} -> {:.2f}'.format(con_count[0], con_count[-1]))
         print('Factor: {:.2f}'.format(con_count[-1]/con_count[0]))
-
-
 
     def edge_changes(self, f):
 
@@ -368,14 +368,6 @@ class Figure(object):
                     times,
                     [(mean[1][1][i]-mean[0][1][i])/mean[2][1][i] for i in range(len(datasets))]
                 ]),
-#                ('', [
-#                    [t-0.5 for t in times],
-#                    [mean[1][1][i]/mean[2][1][i]-1 for i in range(len(datasets))]
-#                ]),
-#                ('', [
-#                    [t+0.5 for t in times],
-#                    [mean[0][1][i]/mean[2][1][i]-1 for i in range(len(datasets))]
-#                ]),
             ]
 
             reg = linregress(*bars[0][1])
@@ -408,8 +400,6 @@ class Figure(object):
                 save=f+'_hebbian_plasticity_inset',
             )
 
-
-
         else:
 
             y_label = 'Coefficent of variation (CV) in\nstrengthening of connections'
@@ -429,3 +419,118 @@ class Figure(object):
                 save=f+'_hebbian_plasticity_slope', darkmedian=False,
             )
 
+
+    def connectivity_gaps(self, f):
+
+        G = data_manager.get_connections()['count'].copy()
+
+        y_label = 'Missing connections'
+
+        xs = [timepoint[d] for d in all_datasets]
+        ys = []
+        for d in all_datasets:
+
+            gaps = 0
+            for edge in G.index:
+
+                edge_c = (contralateral(edge[0]), contralateral(edge[1]))
+
+                s = G.loc[edge]
+                if edge_c in G.index:
+                    s_c = G.loc[edge_c]
+                else:
+                    s_c = pd.Series([0]*len(all_datasets), index=all_datasets)
+
+                if s[d] == 0 and s_c[d] > 0 and np.count_nonzero(s) == 7:
+                    gaps += 1
+
+            ys.append(gaps)
+
+        self.plt.plot(
+            'xy_graph', (xs, (('', ys),)),
+            y_label=y_label, ylim=(0, 50), yticks=(0, 25, 50),
+            smooth=True, save=f+'_connectivity_gaps',
+            size=0.18, x_label='Developmental age',
+            margin={'left': 0.05, 'right': 0.01, 'top': 0.03, 'bottom': 0.03},
+        )
+
+
+
+    def asymmetry(self, f):
+
+        G = data_manager.get_connections()['count'].copy()
+        G = data_manager.remove_noise(G)
+
+        xs = [timepoint[d] for d in all_datasets]
+        ys = []
+        err = []
+        for d in all_datasets:
+
+            done = set()
+            cvs = []
+            for edge in G.index:
+
+                if edge in done:
+                    continue
+
+                edge_c = (contralateral(edge[0]), contralateral(edge[1]))
+                if edge == edge_c:
+                    continue
+                s1 = G.loc[edge, d]
+                s2 = 0
+                if edge_c in G.index:
+                    s2 = G.loc[edge_c, d]
+
+                if s1 == 0 and s2 == 0:
+                    continue
+
+                if G.loc[edge].astype(bool).sum() < 7:
+                    continue
+
+                cvs.append(abs(s1-s2)/(s1+s2))
+
+                done.add(edge)
+                done.add(edge_c)
+
+            ys.append(np.mean(cvs))
+            err.append(sc.stats.sem(cvs))
+
+        self.plt.plot(
+            'xy_graph', (xs, (('', ys),)),
+            ylim=(0, 0.5), err=[err], colors=['k'],
+            smooth=True,y_label='Left-right asymmetry (CV)',
+            save=f+'_asymmetry',
+            size=0.18, x_label='Developmental age',
+            margin={'left': 0.05, 'right': 0.01, 'top': 0.03, 'bottom': 0.03},
+        )
+
+    def degree_distribution(self, f):
+
+        G = data_manager.get_connections()['count'].copy()
+
+        degree_l1 = defaultdict(int)
+        degree_adult = defaultdict(int)
+
+        for (pre, post), syn in G.iterrows():
+
+            if syn[0]:
+                degree_l1[post] += 1
+                degree_l1[pre] += 1
+
+            if syn[-1]:
+                degree_adult[post] += np.count_nonzero(syn[-2:])
+                degree_adult[pre] += np.count_nonzero(syn[-2:])
+
+        data = (
+            ('', list(degree_l1.values())),
+#            ('ad', np.array(degree_adult.values())/2.0),
+        )
+
+        self.plt.plot(
+            'hist', data, colors=[(0.3, 0.3, 0.3, 0.3)],
+            size=0.18, xlim=(0, 35), x_label='Connections per neuron at birth',
+            y_label='Neurons',
+            fitbins=True,
+            save=f+'_degree_distribution',
+            margin={'left': 0.05, 'right': 0.01, 'top': 0.05, 'bottom': 0.03},
+        )
