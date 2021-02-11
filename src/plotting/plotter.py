@@ -496,9 +496,7 @@ class Plotter(object):
                 ax.plot(xs, y, markerfacecolor=color, markeredgecolor=edge_color, label=l, marker='.', linewidth=0, markersize=markersize, markeredgewidth=Plotter.linewidth/2.0, clip_on=clipon)
 
                 x_fit, y_fit, text_x, text_y, p = stats_values[i]
-                
-                
-                
+
                 ps = [v[4] for v in stats_values]
                 ps_corrected = fdrcorrection0(ps)[1]
                 p = ps_corrected[i]
@@ -515,7 +513,6 @@ class Plotter(object):
                     t = '**'
                 else:
                     t = '***'
-                
 
                 ax.plot(x_fit, y_fit, color=edge_color, marker=None, linewidth=Plotter.linewidth/2.0, linestyle='dashed', clip_on=clipon)  
 
@@ -523,7 +520,7 @@ class Plotter(object):
 
             if linkpoints:
                 if dots:
-                    ax.plot(xs, y, color=color, label=l, marker='.', linewidth=0, markersize=markersize, alpha=alpha)
+                    ax.plot(xs, y, color=color, marker='.', linewidth=0, markersize=markersize, alpha=alpha, label='_nolegend_')
                 
                 # Take the mean of duplicate values.
                 if type(y) == pd.Series:
@@ -536,18 +533,14 @@ class Plotter(object):
                     xs_line = sorted(set(xs))
                     y_line = [np.mean(unique_y[x]) for x in xs_line]
 
-                    
                 linewidth = linewidth or Plotter.linewidth
                 linestyle = 'solid'
                 if smooth:
-#                        linewidth = linewidth/2
-#                        linestyle = 'dashed'
                     for j in range(len(y_line)):
                         if j == 0 or j == len(y_line)-1:
                             continue
                         y_line[j] = np.mean(y_line[j-1:j+2])
-                        
-                
+
                 ax.plot(xs_line, y_line, color=color, label=l, linewidth=linewidth, linestyle=linestyle, alpha=alpha)
             else:
                 if not stats:
