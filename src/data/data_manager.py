@@ -14,11 +14,8 @@ from src.data.neuron_info import neuron_list, in_brain, class_members, \
 synapse_data = 'data/synapses'
 skeleton_data = 'data/skeletons'
 volumetric_data = 'data/physical_contact'
+legacy_data = 'data/legacy_data'
 
-legacy_data = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                           'legacy_data')
-wormwiring_data = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                               'wormwiring')
 valid_cells = set([n for c in neuron_list if in_brain(c) for n in class_members(c)])
 
 
@@ -75,7 +72,14 @@ def get_synapses(datasets=all_datasets):
     """
     synapses = {d: [] for d in datasets}
     for dataset in datasets:
-        with open(os.path.join(synapse_data, dataset + '_synapses.json')) as f:
+
+        fpath = os.path.join(synapse_data, dataset + '_synapses.json')
+        if dataset == 'white_adult':
+            fpath = os.path.join(legacy_data, 'catmaid_N2U_nmjs.json')
+        if dataset == 'white_l4':
+            fpath = os.path.join(legacy_data, 'catmaid_JSH_nmjs.json')
+
+        with open(fpath) as f:
             dataset_synapses = json.load(f)
 
         # Filter out synapses between invalid cells.
@@ -191,7 +195,7 @@ def get_legacy_connections(dataset_to_get):
     #   the max should resolve both issues.
 
     connections = {}
-    with open(os.path.join(legacy_data, 'edgelist_durbin.txt')) as f:
+    with open(os.path.join(legacy_data, 'durbin.txt')) as f:
         for line in f:
             pre, post, typ, dataset, synapses = line.strip().split('\t')
 
@@ -241,7 +245,7 @@ def get_legacy_connections(dataset_to_get):
 def get_cook_data():
     edges = defaultdict(int)
 
-    with open(os.path.join(wormwiring_data, 'N2U.txt')) as f:
+    with open(os.path.join(legacy_data, 'wormwiring_N2U.txt')) as f:
         for l in f:
             pre, post, syn = l.split('\t')
 
