@@ -53,8 +53,6 @@ class Figure(object):
                 if classification in ('remainder', 'noise'):
                     variable[post if inputs else pre] += s
 
-
-
         y_label='Proportion of variable connection'
 
         if inputs:
@@ -71,7 +69,6 @@ class Figure(object):
             margin_top = 0.05
 
         ns = list(set(list(nonvariable.keys()) + list(variable.keys())))
-
 
         data, l, c = [], [], []
         types = ['sensory', 'modulatory', 'inter', 'motor',]
@@ -455,7 +452,69 @@ class Figure(object):
             save=f'{f}_filling_fraction_{inputs_or_outputs}'
         )
 
+    def variability_between_adults(self, f, threshold=1):
 
+        G7 = data_manager.get_connections()[('count', 'Dataset7')].copy()
+        G8 = data_manager.get_connections()[('count', 'Dataset8')].copy()
+        G_n2u = data_manager.get_legacy_connections('white_adult').copy()
+        G_n2u_cook = data_manager.get_cook_data().copy()
+        
+        G7 = G7[G7 >= threshold]
+        G8 = G8[G8 >= threshold]
+        G_n2u = G_n2u[G_n2u >= threshold]
+        G_n2u_cook = G_n2u_cook[G_n2u_cook >= threshold]
+
+        dataset7 = set(G7[G7 > 0].index)
+        dataset8 = set(G8[G8 > 0].index)
+        n2u = set(G_n2u.index)
+        n2u_cook = set(G_n2u_cook.index)
+
+        self.plt.plot(
+            'venn',
+            (dataset7, dataset8, n2u), size=0.3,
+            labels=('Dataset 7 (adult)', 'Dataset 8 (adult)', 'N2U (adult, White et al., 1986)'),
+            save=f+'_venn_n2u',
+        )
+
+        self.plt.plot(
+            'venn',
+            (dataset7, dataset8, n2u_cook), size=0.3,
+            labels=('Dataset 7 (adult)', 'Dataset 8 (adult)', 'N2U (adult, Cook et al., 2019)'),
+            save=f+'_venn_n2u_cook',
+        )
+
+        new_noise = len([n for n in (n2u_cook - n2u) if n in dataset8 or n in dataset7])
+        new_total = len(n2u_cook - n2u)
+        print(f'New connections added by Cook et al. to N2U: {new_total}')
+        print(f'Proportion of new connections in Dataset 7 and 8: {new_noise/new_total:.2f}')
+
+        d1 = dataset7
+        d2 = dataset8
+        d3 = n2u
+
+        stable_by_adults = d1.intersection(d2).intersection(d3)
+        variable_by_adults = d1.union(d2).union(d3) - stable_by_adults
+
+        nonvariable_out = defaultdict(float)
+        variable_out = defaultdict(float)
+        nonvariable_in = defaultdict(float)
+        variable_in = defaultdict(float)
+
+        for pre, post in stable_by_adults:
+            nonvariable_out[pre] += 3
+            nonvariable_in[post] += 3
+
+        for pre, post in variable_by_adults:
+            e = (pre, post)
+            counts = 0
+            counts += int(e in dataset7)
+            counts += int(e in dataset8)
+            counts += int(e in n2u)
+            if counts > 0:
+                variable_out[pre] += counts
+                variable_in[post] += counts
+
+        return nonvariable_out, variable_out, nonvariable_in, variable_in
 
     def _edge_types_per_neuron(self, edge_classifications, outputs=True, inputs=False):
 
