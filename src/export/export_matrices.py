@@ -11,13 +11,13 @@ from src.data import data_manager
 from src.data.neuron_info import neuron_list, in_brain, class_members, ntype, is_postemb
 
 
-def export_synapses(path):
-    df_to_store = fig_supplemental._synapses_on_branches(exclude_postemb=False, remove_unknown=False)[
+def export_synapses(path, synapses_and_branches):
+    df_to_store = synapses_and_branches[
         ['dataset', 'pre', 'post', 'syn_id', 'sections', 'size', 'post_is_branch']
-    ]
+    ].copy()
     for col in ('size', ):
-        df_to_store.loc[:, col] = df_to_store[col].fillna(-1).astype(int)
-        
+        df_to_store[col] = df_to_store[col].fillna(-1).astype(int)
+
     df_to_store['post_is_branch'] = df_to_store['post_is_branch'].astype(str).replace({'True': 'yes', 'False': 'no'})
     valid_cells = set([n for c in neuron_list if in_brain(c) for n in class_members(c) if ntype(c) not in ('other', )])
     df_to_store.loc[~df_to_store['post'].isin(valid_cells), 'post_is_branch'] = 'unknown'

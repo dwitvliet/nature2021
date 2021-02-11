@@ -19,7 +19,8 @@ class Figure(object):
     def __init__(self, output_path, page_size=7.20472):
         self.plt = plotter.Plotter(output_path=output_path, page_size=page_size)
 
-    def _get_branches(self, exclude_postemb=True):
+    @classmethod
+    def _get_branches(cls, exclude_postemb=True):
 
         skeletons = data_manager.get_skeletons()
         cells_with_skeletons = [n for c in neuron_list for n in class_members(c) if (in_brain(c) and ntype(c) != 'other')]
@@ -165,8 +166,9 @@ class Figure(object):
             margin={'left': 0.05, 'right': 0.01, 'top': 0.03, 'bottom': 0.03},
         )
 
-    def _synapses_on_branches(self, remove_unknown=True, exclude_postemb=True):
-        long_branches, short_branches = self._get_branches(exclude_postemb=exclude_postemb)
+    @classmethod
+    def synapses_on_branches(cls, remove_unknown=True, exclude_postemb=True):
+        long_branches, short_branches = cls._get_branches(exclude_postemb=exclude_postemb)
         synapses = data_manager.get_synapses_one_to_one().copy()
         
         if remove_unknown:
@@ -190,7 +192,7 @@ class Figure(object):
 
     def proportion_of_synapses_on_branches(self, f):
 
-        synapses = self._synapses_on_branches()
+        synapses = self.synapses_on_branches()
 
         x = [timepoint[d] for d in all_datasets]
         y = synapses.groupby('dataset')['post_is_branch'].apply(lambda x: x.sum()/x.size)
@@ -241,7 +243,7 @@ class Figure(object):
         )
 
     def branches_by_type(self, f):
-        synapses_branches = self._synapses_on_branches(exclude_postemb=False)
+        synapses_branches = self.synapses_on_branches(exclude_postemb=False)
         
         synapses_branches['post_type'] = synapses_branches['post'].apply(ntype)
     
@@ -329,7 +331,7 @@ class Figure(object):
 
         edge_classifications = edge_classifications.copy()
 
-        synapses_branches = self._synapses_on_branches(exclude_postemb=True)
+        synapses_branches = self.synapses_on_branches(exclude_postemb=True)
         
         categories = {
             'increase': 'Dev.\ndynamic',
