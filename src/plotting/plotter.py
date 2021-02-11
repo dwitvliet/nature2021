@@ -263,8 +263,13 @@ class Plotter(object):
     def empty(self, ax, data, colors):
         ax.plot([], [])
 
-    def table(self, ax, columns, colors, width=1000.0, height=1000.0, header=[], row_names=[]):
-        #1349
+    def table(self, ax, columns, colors, width=1000, height=1000, header=None, row_names=None):
+
+        if header is None:
+            header = []
+        if row_names is None:
+            row_names = []
+
         ax.plot([], [])
         ax.set_xlim([0, width])
         ax.set_ylim([0, height])
@@ -272,7 +277,7 @@ class Plotter(object):
         w = float(width)
         h = float(height)
         
-        x_coords = list(range(0, width, width/len(columns)))
+        x_coords = list(range(0, width, width // len(columns)))
         for x in x_coords:
             ax.axvline(x, color='k', lw=0.5, clip_on=False)
         for y in [0, height]:
