@@ -1,7 +1,9 @@
 import numpy as np
+import pandas as pd
 
 from src.data import data_manager
 from src.data.dataset_info import all_datasets, stage
+from src.data.neuron_info import ntype, dark_colors
 
 from src.plotting import plotter
 
@@ -99,3 +101,53 @@ class Figure(object):
             save=f+'_modules_across_development',
         )
 
+    def module_stability(self, f):
+
+        communities, _ = data_manager.get_communities()
+            
+        neurons = set([n for cs in communities.values() for c in cs for n in c])
+        
+        neuron_communities = {n: [] for n in neurons}    
+        for dataset, dataset_communities in communities.items():
+            for i, community in enumerate(dataset_communities):
+                for neuron in community:
+                    neuron_communities[neuron].append(i)
+                                    
+        neuron_communities = pd.DataFrame.from_dict(neuron_communities, orient='index')
+        
+        community_stability = {}
+        
+        for n, cs in neuron_communities.iterrows():
+            community_stable_count = 0
+            
+            community_stable_count += cs[1] == cs[2]
+            community_stable_count += cs[3] == cs[4]
+            community_stable_count += cs[5] == cs[6]
+            community_stable_count += cs[6] == cs[7]
+            
+            # community 6 splits into 6/7
+            if cs[2] == cs[3] or (cs[2] == 6 and cs[3] == 7):
+                community_stable_count += 1
+            
+            # community 4 splits into 4/5 and community 6 splits into 5/6
+            if cs[4] == cs[5] or (cs[4] == 4 and cs[5] == 5) or (cs[4] == 6 and cs[5] == 5):
+                community_stable_count += 1
+       
+            community_stability[n] = community_stable_count/6
+        
+        df = pd.Series(community_stability, name='module_stability').to_frame()
+        df['ntype'] = df.index.map(ntype)
+        
+        cell_types = ['sensory', 'modulatory', 'inter', 'motor', 'muscle']
+    
+        self.plt.plot(
+            'simple_violin', 
+            [df.loc[df['ntype'] == cell_type, 'module_stability'] for cell_type in cell_types],
+            colors=[dark_colors[t] for t in cell_types],
+            labels=cell_types,
+            ylim=(0, 1.01),
+            size=(0.15, 0.15), #vert=False,
+            x_label='Cell type',
+            y_label='Module stability across datasets',
+            save=f+'_module_stability',
+        )

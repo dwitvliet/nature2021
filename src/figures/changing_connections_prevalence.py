@@ -2,6 +2,8 @@ import os
 from itertools import compress
 from collections import defaultdict
 
+import numpy as np
+import pandas as pd
 from statsmodels.sandbox.stats.multicomp import fdrcorrection0
 from statsmodels.stats.proportion import proportions_ztest
 
@@ -27,7 +29,7 @@ class Figure(object):
         self.plt = plotter.Plotter(output_path=output_path, page_size=page_size)
 
 
-    def changes_type_overrepresentation(self, f, edge_classifications, color='red'):
+    def changes_type_overrepresentation(self, fname, edge_classifications, color='red'):
 
         G = data_manager.get_connections()['count'].copy()
         G = data_manager.remove_postemb(G)
@@ -135,7 +137,9 @@ class Figure(object):
         edge_to_p = dict(zip(labels, adjusted_p_values))
         output = sorted(output, key=lambda x: (edge_to_p[(x[0], x[1])] < 0.05, x[2]))
 
-        with open(os.path.join(self.plt.output_path, f + '_changes_type_overrepresentation.txt'), 'w') as f:
+        fpath = os.path.join(self.path, fname + '_changes_type_overrepresentation.txt')
+
+        with open(fpath, 'w') as f:
             f.write('"rowname"\t"key"\t"value"\t"color"\t"percentage_changing"\n')
             for (pre,  post, population, c, proportion) in output:
                 if pre in ('sensory', 'modulatory', 'inter', 'motor'):
@@ -150,3 +154,30 @@ class Figure(object):
                 post = post.capitalize()
 
                 f.write('"{}"\t"{}"\t{}\t"{}"\t"{}"\n'.format(pre,  post, population, c, proportion*100))
+
+        print(f'Saved to `{fpath}`')
+
+    def relative_synapse_increase_by_type(self, fname, edge_classifications):
+
+        G = data_manager.get_connections()['count'].copy()
+        G = data_manager.remove_postemb(G)
+
+        edge_classifications = edge_classifications.copy()
+        
+        G['pre_type'] = [ntype(n) for n in G.index.get_level_values('pre')]
+        G['post_type'] = [ntype(n) for n in G.index.get_level_values('post')]
+        G['type'] = G['pre_type'] + G['post_type']
+        G = G.join(edge_classifications.rename('classification'))
+        
+        G['rel_synapse_addition'] = G[['Dataset7', 'Dataset8']].mean(axis=1) / G[['Dataset1', 'Dataset2']].mean(axis=1)
+        
+        G_stable = G[G['classification'] == 'stable']
+        G_stable = G_stable[G_stable['rel_synapse_addition'] != np.inf]
+        stable_synapse_addition = G_stable.groupby('type')['rel_synapse_addition'].mean()
+
+        stable_synapse_addition_percentage = (stable_synapse_addition - 1) * 100
+        stable_synapse_addition_percentage.name = 'percentage_synapse_number_increase_for_stable_connections'
+
+        fpath = os.path.join(self.path, fname + '_synapse_increase_by_type.txt')
+        stable_synapse_addition_percentage.to_csv(fpath)
+        print(f'Saved to `{fpath}`')

@@ -84,7 +84,7 @@ class Figure(object):
             colors=c, xticklabels=l, xtickpad=3, xpad=5, ylim=ylim, yticks=yticks,
             y_label=y_label, x_label='Stable connection directionality',
             show_outliers=False, stats=((2, 3), (1, 2), (1, 3)),
-            save=f+'_feedforward_stable_increase'
+            save=f+'_feedforward_stable_increase' + ('_size' if use_size else '')
         )
 
 
