@@ -405,3 +405,153 @@ class Figure(object):
             size=(0.09, 0.135),
             save=f+'_polyadic_partners',
         )
+
+    def filling_fraction_per_type(self, f, inputs=False):
+
+        G = data_manager.get_connections()['count'].copy()
+        G_adj = data_manager.get_adjacency().copy()
+
+        synapses = defaultdict(float)
+        contacts = defaultdict(float)
+        for (pre, post), syns in G.iterrows():
+            synapses[post if inputs else pre] += 1
+        for (pre, post), adj in G_adj.iterrows():
+            contacts[pre] += 1
+
+        filling_fractions = defaultdict(list)
+        for n in synapses:
+            typ = ntype(n)
+            if typ == 'other':
+                continue
+            filling_fractions[typ].append(synapses[n]/contacts[n])
+
+        data, l, c = [], [], []
+        types = ['sensory', 'modulatory', 'inter', 'motor']
+        if inputs:
+            types += ['muscle']
+        for typ in types:
+            data.append(filling_fractions[typ])
+            c.append(dark_colors[typ])
+            l.append(typ.capitalize())
+
+        y_label = 'Proportion of physical contacts with synapses'
+        x_label = ' cell type'
+
+        if inputs:
+            x_label = 'Postsynaptic' + x_label
+            size = (0.2*1.25, 0.12)
+            ylim = (0, 0.6)
+        else:
+            x_label = 'Presynaptic' + x_label
+            size = (0.2, 0.12)
+            ylim = (0, 0.6)
+
+        inputs_or_outputs = 'inputs' if inputs else 'outputs'
+        self.plt.plot(
+            'box_plot', data, colors=c, darkmedian=True, xticklabels=l, y_label=y_label, ylim=ylim,
+            stats=None, size=size, show_outliers=False,
+            margin={'left': 0.04, 'right': 0.01, 'top': 0.1, 'bottom': 0.05},
+            x_label=x_label, xtickpad=2,
+            save=f'{f}_filling_fraction_{inputs_or_outputs}'
+        )
+
+
+
+    def _edge_types_per_neuron(self, edge_classifications, outputs=True, inputs=False):
+
+        classifications = edge_classifications.copy()
+        G = data_manager.get_connections()['count'].copy()
+        G = data_manager.remove_postemb(G)
+
+        stable = defaultdict(float)
+        variable = defaultdict(float)
+
+        for (pre, post), syns in G.iterrows():
+
+            classification = classifications[(pre, post)]
+            if classification in ('stable', 'increase', 'decrease'):
+                if inputs:
+                    stable[post] += np.count_nonzero(syns[-2:])
+                if outputs:
+                    stable[pre] += np.count_nonzero(syns[-2:])
+
+            if classification in ('remainder', 'noise'):
+                if inputs:
+                    variable[post] += np.count_nonzero(syns[-2:])
+                if outputs:
+                    variable[pre] += np.count_nonzero(syns[-2:])
+
+        for n in stable:
+            stable[n] *= 0.5
+        for n in variable:
+            variable[n] *= 0.5
+
+        return stable, variable
+
+    def variable_correlation(self, f, edge_classifications, versus='synapse_number', box=False):
+        
+        classifications = edge_classifications.copy()
+        G = data_manager.get_connections()['count'].copy()
+        G = data_manager.remove_postemb(G)
+
+        y_label = 'Variable connections'
+
+        ylim = (0, 20)
+        fname = '_variable_edge_prevalence_vs_' + versus
+
+        if versus == 'synapse_number':
+            xlim = (0, 300)
+            xticks = range(0, 250, 50)
+            x_label = 'Synapses in stable connections'
+        if versus == 'stable_growth':
+            xlim = (0, 20)
+            xticks = range(0, 25, 5)
+            x_label = 'Relative number of synapses added to stable connections'
+
+        stable, variable = self._edge_types_per_neuron(classifications)
+
+        stable_synapses_start = defaultdict(float)
+        stable_synapses_end = defaultdict(float)
+        stable_synapse_increase = {}
+
+        for (pre, post), syns in G.iterrows():
+            if classifications[(pre, post)] != 'stable':
+                continue
+            n = pre
+            stable_synapses_start[n] += syns[0]
+            stable_synapses_end[n] += np.mean(syns[-2:])
+
+        for n in stable_synapses_start:
+            if stable_synapses_start[n] == 0:
+                continue
+            if versus == 'synapse_number':
+                stable_synapse_increase[n] = stable_synapses_end[n]
+            if versus == 'stable_growth':
+                stable_synapse_increase[n] = stable_synapses_end[n]/stable_synapses_start[n]
+
+        x, y, c, l = [], [], [], []
+        types = ['sensory', 'modulatory', 'inter', 'motor',]
+
+        for typ in types:
+            x.append([stable_synapse_increase[n] for n in stable_synapse_increase if ntype(n) == typ])
+            y.append([variable[n] for n in stable_synapse_increase if ntype(n) == typ])
+            c.append(dark_colors[typ])
+            l.append(typ.capitalize())
+
+        if box:
+            self.plt.plot(
+                'box_plot', x, colors=c, yticklabels=l, x_label=x_label, y_label='Presynaptic cell type',
+                show_outliers=False, size=(0.2*1.25, 0.07), vert=False, #stats=stats,
+                darkmedian=True, xtickpad=2, xlim=xlim,
+                xticks=xticks,
+                margin={'left': 0.04, 'right': 0.01, 'top': 0.1, 'bottom': 0.05},
+                save=f+fname+'_box',
+            )
+        else:
+            self.plt.plot(
+                'scatter', [x, y], x_label=x_label, y_label=y_label, colors=c, legend=l,
+                size=(0.2*1.25, 0.17), xlim=xlim, ylim=ylim, crop=True, stats='spearman_combined',
+                xticks=xticks, yticks=range(0, 25, 5),
+                margin={'left': 0.04, 'right': 0.01, 'top': 0.1, 'bottom': 0.05},
+                save=f+fname, legendpos='floatright'
+            )
