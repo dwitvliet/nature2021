@@ -237,7 +237,7 @@ class Figure(object):
         self.plt.plot(
             'kde', data_to_plot, colors=['#000000', '#aaaaaa'],
             size=(0.15, 0.135),
-            x_label='Relative postsynaptic\ncontact area at synapse',
+            x_label='Proportion of postsynaptic\ncontact area at synapse',
             yticks=[], 
             y_label='Frequency', ypad=5,
             linewidth=1.5,
