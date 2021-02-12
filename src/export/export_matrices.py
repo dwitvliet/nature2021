@@ -27,15 +27,15 @@ def export_synapses(path, synapses_and_branches):
     print(f'Saved to `{fpath}`')
 
 
-def export_classifications(path, pair_classifications):
+def export_classifications(path, edge_classifications):
     # Write edge classifications to file.
     G = data_manager.get_connections().copy()
-    G_pair = data_manager.to_npair(G)
-    G_pair['edge_classifications'] = 'post-embryonic brain integration'
-    postemb_connections = G_pair[
-        G_pair.index.map(lambda idx: is_postemb(idx[0]) or is_postemb(idx[1]))]
+    G['edge_classifications'] = 'post-embryonic brain integration'
+    postemb_connections = G[
+        G.index.map(lambda idx: is_postemb(idx[0]) or is_postemb(idx[1]))
+    ]
 
-    classifications = pair_classifications.copy()
+    classifications = edge_classifications.copy()
 
     classifications = classifications.append(
         postemb_connections['edge_classifications'],
