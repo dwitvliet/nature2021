@@ -8,9 +8,9 @@ from src.data.neuron_info import ntype, dark_colors
 from src.plotting import plotter
 
 community_colors = {
-    'High-level sensory': '#C891FF',
-    'Sensory integration': '#6DB6FF',
-    'Sensory reflexes': '#9DDC8A',
+    'Posterior sensory': '#C891FF',
+    'Medial sensory/\ninterneuron': '#6DB6FF',
+    'Anterior sensory': '#9DDC8A',
     'Head movement': '#A68259',
     'Body movement': '#FFD265',
     'Motor output': '#FF8B8B',
@@ -44,53 +44,40 @@ class Figure(object):
                     if prev_count == 0:
                         if c == 'Body movement':
                             prev_count += [counts2 for c, counts2 in community_counts if c == 'Head movement'][0][j-1]
-                        elif c == 'Sensory reflexes':
-                            prev_count += [counts2 for c, counts2 in community_counts if c == 'Sensory integration'][0][j-1]
-                        elif c == 'High-level sensory':
-                            prev_count -= [counts2 for c, counts2 in community_counts if c == 'Sensory integration'][0][j-1]
+                        elif c == 'Anterior sensory':
+                            prev_count += [counts2 for c, counts2 in community_counts if c == 'Medial sensory/\ninterneuron'][0][j-1]
+                        elif c == 'Posterior sensory':
+                            prev_count -= [counts2 for c, counts2 in community_counts if c == 'Medial sensory/\ninterneuron'][0][j-1]
                     lines.append((
                         (j-1, (prev_count/2.0 + cumulative_counts[j-1])/dataset_counts[j-1]),
                         (j, (count/2.0 + cumulative_counts[j])/dataset_counts[j])
                     ))
 
-
             cumulative_counts += counts
-
 
         ds0_points = [community_counts[0][1][0]*0.5/dataset_counts[0],
                       (community_counts[0][1][0]+community_counts[1][1][0]*0.5)/dataset_counts[0]]
         ds1_points = [c1[1] for c1, c2 in lines if c1[0] == 1]
 
         lines.append((
-                (0, ds0_points[1]),
-                (1, ds1_points[1])
+            (0, ds0_points[1]),
+            (1, ds1_points[1])
         ))
         lines.append((
-                (0, ds0_points[1]),
-                (1, ds1_points[2])
+            (0, ds0_points[1]),
+            (1, ds1_points[2])
         ))
         lines.append((
-                (0, ds0_points[0]),
-                (1, ds1_points[2])
+            (0, ds0_points[0]),
+            (1, ds1_points[2])
         ))
         lines.append((
-                (0, ds0_points[0]),
-                (1, ds1_points[0])
+            (0, ds0_points[0]),
+            (1, ds1_points[0])
         ))
-
-        new_names = {
-            'High-level sensory': 'Posterior sensory',
-            'Sensory integration': 'Medial sensory/\ninterneuron',
-            'Sensory reflexes': 'Anterior sensory',
-            'Head movement': 'Head movement',
-            'Body movement': 'Body movement',
-            'Motor output': 'Motor output',
-            '': '',
-        }
 
         for i, (name, counts) in enumerate(community_counts):
-            community_counts[i] = (new_names[name], counts)
-            colors[new_names[name]] = colors[name]
+            community_counts[i] = (name, counts)
 
         self.plt.plot(
             'stacked_bar_graph', community_counts, size=0.25,

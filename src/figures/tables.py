@@ -51,23 +51,13 @@ class Figure(object):
 
         colors = {n: dark_colors[ntype(n)] for c in neuron_list for n in class_members(c)}
 
-        new_names = {
-            'High-level sensory': 'Amphid sensory\ncontaining',
-            'Sensory integration': 'Interneuron\ncontaining',
-            'Sensory reflexes': 'Labial sensory\ncontaining',
-            'Head movement': 'Head movement',
-            'Body movement': 'Body movement',
-            'Motor output': 'Motor output',
-            '': '',
-        }
-
         self.plt.plot(
             'table', columns, colors=colors, header=datasets,
-            row_names=[new_names[c] for c in community_names if c],
+            row_names=[c for c in community_names if c],
             margin={'left': 0.005, 'right': 0.095, 'top': 0.005, 'bottom': 0.005},
             xticks='remove', yticks='remove',
             size=(0.9, 0.75),
-            width=900, height=750,
+            width=900, height=780,
             no_x=True, no_y=True,
             save=f+'_cells_in_modules',
         )

@@ -608,7 +608,7 @@ def get_communities():
     }
 
     community_names = ['', '', 'Motor output', 'Body movement', 'Head movement',
-                       'Sensory reflexes', 'Sensory integration',
-                       'High-level sensory']
+                       'Anterior sensory', 'Medial sensory/\ninterneuron',
+                       'Posterior sensory']
 
     return communities, community_names
