@@ -150,7 +150,6 @@ def export_to_excel(path):
         print(f'Saved to `{fpath}`')
 
 
-
 def export_to_matlab(path, edge_classifications):
 
     G = data_manager.get_connections()['count'].copy()
@@ -168,7 +167,6 @@ def export_to_matlab(path, edge_classifications):
     adult_synapses = adult_matrix.sum()
     adult_edges = adult_matrix.astype(bool).sum()
 
-
     for dataset_i, dataset in enumerate(G.columns):
 
         matrix = get_matrix(dataset)
@@ -177,58 +175,13 @@ def export_to_matlab(path, edge_classifications):
         glia = [n for n in matrix.columns if ntype(n) == 'other']
         matrix = matrix.drop(glia, axis=0).drop(glia, axis=1)
 
-        node_list = list(matrix.columns)
-
-        # All + postemb.
-        save_to_mat(matrix.to_numpy(), f'A-all-postemb_{dataset_i}')
+        # Drop postembryonic cells
+        postemb = [n for n in matrix.columns if is_postemb(n)]
+        matrix = matrix.drop(postemb, axis=0).drop(postemb, axis=1)
 
         # All.
-        postemb = [n for n in node_list if is_postemb(n)]
-        matrix[postemb] = 0
-        matrix.loc[postemb] = 0
+        node_list = list(matrix.columns)
         save_to_mat(matrix.to_numpy(), f'B-all_{dataset_i}')
-
-        # Prune synapses until L1 numbers.
-        matrix_pruned = matrix.to_numpy().copy()
-        while matrix_pruned.astype(bool).sum() > l1_edges:
-            edge_to_prune = random.choice(list(zip(*np.where(matrix_pruned > 0))))
-            matrix_pruned[edge_to_prune] -= 1
-        while matrix_pruned.sum() > l1_synapses:
-            edge_to_prune = random.choice(list(zip(*np.where(matrix_pruned > 1))))
-            matrix_pruned[edge_to_prune] -= 1
-        save_to_mat(matrix_pruned, f'E-all-pruned-to-l1_{dataset_i}')
-
-        # Randomly add synapses until adult numbers.
-        matrix_grown_random = matrix.to_numpy().copy()
-        all_edges = list(itertools.product(
-            range(matrix_grown_random.shape[1]),
-            range(matrix_grown_random.shape[0])
-        ))
-        while matrix_grown_random.astype(bool).sum() < adult_edges:
-            edge_to_grow = random.choice(all_edges)
-            matrix_grown_random[edge_to_grow] += 1
-        nonzero_edges = list(zip(*np.where(matrix_grown_random > 0)))
-        while matrix_grown_random.sum() < adult_synapses:
-            edge_to_grow = random.choice(nonzero_edges)
-            matrix_grown_random[edge_to_grow] += 1
-        save_to_mat(matrix_grown_random, f'F-all-grown-to-adult-random_{dataset_i}')
-
-        # Add synapses to existing cells until adult adult numbers.
-        matrix_grown = matrix.to_numpy().copy()
-        pres = range(matrix_grown.shape[1])
-        posts = range(matrix_grown.shape[0])
-        pre_synapses = matrix_grown.sum(axis=0)
-        post_synapses = matrix_grown.sum(axis=1)
-        while matrix_grown.astype(bool).sum() < adult_edges:
-            pre_to_grow = random.choices(pres, weights=pre_synapses)[0]
-            post_to_grow = random.choices(posts, weights=post_synapses)[0]
-            matrix_grown[post_to_grow, pre_to_grow] += 1
-        nonzero_edges = list(zip(*np.where(matrix_grown > 0)))
-        nonzero_edge_weights = [pre_synapses[n1] + post_synapses[n2] for n1, n2 in nonzero_edges]
-        while matrix_grown.sum() < adult_synapses:
-            edge_to_grow = random.choices(nonzero_edges, nonzero_edge_weights)[0]
-            matrix_grown[edge_to_grow] += 1
-        save_to_mat(matrix_grown, f'G-all-grown-to-adult_{dataset_i}')
 
         # No variable.
         variable_edges = classifications[classifications.isin(['noise', 'remainder'])].index
@@ -245,7 +198,6 @@ def export_to_matlab(path, edge_classifications):
                 continue
             matrix.loc[post, pre] = 0
         save_to_mat(matrix.to_numpy(), f'D-only_stable_{dataset_i}')
-
 
     # Save cell list.
     pd.Series(range(1, len(node_list)+1), index=node_list).to_csv(os.path.join(path, 'node_int.csv'), header=False)
