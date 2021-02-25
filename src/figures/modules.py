@@ -1,9 +1,7 @@
 import numpy as np
-import pandas as pd
 
 from src.data import data_manager
 from src.data.dataset_info import all_datasets, stage
-from src.data.neuron_info import ntype, dark_colors
 
 from src.plotting import plotter
 
