@@ -37,8 +37,7 @@ def list_to_tuple(func):
 def get_gapjunctions(datasets=all_datasets):
     synapses = []
     for dataset in datasets:
-        with open(
-                os.path.join(synapse_data, dataset + '_gapjunctions.json')) as f:
+        with open(os.path.join(synapse_data, dataset + '_gapjunctions.json')) as f:
             dataset_synapses = json.load(f)
         for synapse in dataset_synapses:
             if synapse['n1'] not in valid_cells or synapse['n1'] not in valid_cells:
@@ -46,7 +45,13 @@ def get_gapjunctions(datasets=all_datasets):
             synapse['dataset'] = dataset
             synapses.append(synapse)
 
-    df = pd.DataFrame(synapses)
+    return pd.DataFrame(synapses)
+
+
+@list_to_tuple
+@lru_cache(maxsize=None)
+def get_gapjunction_connections(datasets=all_datasets):
+    df = get_gapjunctions(datasets=datasets).copy()
     df['count'] = 1
     df = df.groupby(['dataset', 'n1', 'n2'], as_index=False)['count'].sum() \
         .set_index(['n1', 'n2']) \
@@ -246,8 +251,8 @@ def get_cook_data():
     edges = defaultdict(int)
 
     with open(os.path.join(legacy_data, 'wormwiring_N2U.txt')) as f:
-        for l in f:
-            pre, post, syn = l.split('\t')
+        for line in f:
+            pre, post, syn = line.split('\t')
 
             # Clean up labels.
             if pre.endswith('.'):
