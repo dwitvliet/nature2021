@@ -14,6 +14,25 @@ from src.data.neuron_info import npair
 
 @lru_cache(maxsize=None)
 def classify_edges(datasets=all_datasets, edge_type='count'):
+    """
+
+    Classifies connections as stable ('stable'), developmentally dynamic
+    ('increase' and 'decrease'), or variable ('noise' and 'remainder').
+
+    Args:
+        datasets (tuple): datasets to use for running the analysis. E.g. exclude
+            Dataset7 when edge_type is 'contact' or 'size', as it does not have
+            volumetric data for those measurements.
+        edge_type:
+            Which parameter to use for measuring changes across development.
+            'count' is number of synapses, 'size' is the summed size of
+            synapses, 'density' is the number of synapses over the length of the
+            presynaptic neuron, 'contact' is the physical contact area.
+
+    Returns:
+        edge_classifications (pd.Series), edge_pair_classifications (pd.Series)
+
+    """
 
     assert edge_type in ('count', 'size', 'density', 'contact')
 
