@@ -20,9 +20,10 @@ def classify_edges(datasets=all_datasets, edge_type='count'):
     ('increase' and 'decrease'), or variable ('noise' and 'remainder').
 
     Args:
-        datasets (tuple): datasets to use for running the analysis. E.g. exclude
-            Dataset7 when edge_type is 'contact' or 'size', as it does not have
-            volumetric data for those measurements.
+        datasets (tuple): datasets include for running the analysis. If data is
+            not present for the selected edge_type, a dataset is automatically
+            excluded. E.g. Dataset7 is excluded when edge_type is 'contact' or
+            'size', as it does not have volumetric data for those measurements.
         edge_type:
             Which parameter to use for measuring changes across development.
             'count' is number of synapses, 'size' is the summed size of
