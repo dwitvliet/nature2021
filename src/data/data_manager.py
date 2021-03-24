@@ -462,6 +462,8 @@ def to_npair(df):
 
 
 def remove_postemb(df):
+    """ Removes cells integrated into the brain after birth.
+    """
     df = df.copy()
     postemb = [n for n in neuron_list if is_postemb(n)]
     n1_postemb = df.index.get_level_values(0).map(nclass).isin(postemb)
@@ -529,6 +531,12 @@ def remove_noise(df):
 
 
 def get_communities():
+    """ Get communities as defined by WSBM.
+
+    Returns:
+        communities per dataset (dict), community names
+
+    """
     communities = {
         'Dataset1': [
             ['ADAL', 'ADAR', 'ADFL', 'ADFR', 'ADLR', 'AIAL', 'AIAR', 'AIBL', 'AIBR', 'AIYL', 'AIYR', 'AIZL', 'AIZR', 'ASER', 'ASKR', 'AUAL', 'AUAR', 'AVAL', 'AVAR', 'AVBL', 'AVBR', 'AVDR', 'AVEL', 'AVER', 'AVHR', 'AVKL', 'AVKR', 'AWCL', 'AWCR', 'BAGL', 'BAGR', 'BWM-DL01', 'BWM-DL02', 'BWM-DR01', 'BWM-DR02', 'BWM-VL01', 'BWM-VL02', 'BWM-VR01', 'BWM-VR02', 'CEPDL', 'CEPVL', 'CEPVR', 'DVA', 'IL1L', 'IL1R', 'IL2L', 'IL2R', 'OLLL', 'OLQVL', 'OLQVR', 'PVR', 'RIAL', 'RIAR', 'RIBL', 'RIBR', 'RICL', 'RICR', 'RIFL', 'RIGL', 'RIGR', 'RIH', 'RIML', 'RIMR', 'RIPL', 'RIPR', 'RIR', 'RIS', 'RMDDL', 'RMDDR', 'RMDL', 'RMDR', 'RMDVL', 'RMDVR', 'RMED', 'RMEL', 'RMER', 'RMEV', 'SAADR', 'SMBVL', 'SMBVR', 'SMDDL', 'SMDDR', 'SMDVL', 'SMDVR', 'URXL', 'URXR', 'URYVR'],
