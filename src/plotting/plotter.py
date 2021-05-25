@@ -21,7 +21,7 @@ from scipy.stats import linregress
 
 from matplotlib import rcParams
 rcParams['font.family'] = 'sans-serif'
-rcParams['font.sans-serif'] = ['Myriad Pro']
+rcParams['font.sans-serif'] = ['Helvetica']
 
 
 # If fonts don't work, move fonts to /usr/share/matplotlib/mpl-data/fonts/ttf/ 
@@ -43,7 +43,7 @@ class Plotter(object):
             
         plt.rc('xtick', labelsize=5)
         plt.rc('ytick', labelsize=5)
-        plt.rc('axes', labelsize=6)
+        plt.rc('axes', labelsize=5)
 #        plt.rc('subplot', left=7)
         
         plt.rc('figure.subplot', left=0.15, bottom=0.15, top=0.95, right=0.95)
