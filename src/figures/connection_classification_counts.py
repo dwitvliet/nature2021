@@ -19,7 +19,7 @@ categories = {
 
 class Figure(object):
 
-    def __init__(self, output_path, page_size=7.20472):
+    def __init__(self, output_path, page_size=3.5039):
         self.path = output_path
         self.plt = plotter.Plotter(output_path=output_path, page_size=page_size)
 
@@ -51,7 +51,7 @@ class Figure(object):
 
     def edge_classification_count(self, f, edge_classifications,
                                   edge_pair_classifications, to_sum='connections',
-                                  datasets=all_datasets, paired=False, small=True):
+                                  datasets=all_datasets, paired=False):
 
         datasets = list(datasets)
 
@@ -99,11 +99,8 @@ class Figure(object):
             ylim = 8000
             yticks = range(0, 10000, 2000)
 
-        size = 0.41
-        markersize = 7
-        if small:
-            size = 0.275
-            markersize = 5
+        size = 0.25
+        markersize = 5
 
         self.plt.plot(
             'xy_graph', (x, y), y_label=y_label, x_label='Developmental age',
