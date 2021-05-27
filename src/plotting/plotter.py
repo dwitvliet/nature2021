@@ -32,7 +32,7 @@ rcParams['font.sans-serif'] = ['Helvetica']
 
 class Plotter(object):
     
-    linewidth = 1
+    linewidth = 0.75
     
     def __init__(self, output_path='results', page_size=7):
         self.output_path = output_path
@@ -112,6 +112,7 @@ class Plotter(object):
         xpad=2, ypad=2, xtickpad=1, ytickpad=1, ylog=False, xlog=False,
         xgrid=False, ygrid=False, xintersect=None, yintersect=None, border=None,
         scalex=None, colorbar=None, margin={'left': 0.08, 'right': 0.02, 'top': 0.02, 'bottom': 0.08},
+        ticklength=3,
         *args, **kwargs
     ):
 
@@ -153,7 +154,7 @@ class Plotter(object):
         for d in ('top', 'left', 'right', 'bottom'):
             ax.spines[d].set_linewidth(border or Plotter.linewidth)
         
-        ax.tick_params(width=Plotter.linewidth, length=3)
+        ax.tick_params(width=Plotter.linewidth, length=ticklength)
         if no_x and no_y:    
             ax.tick_params(width=Plotter.linewidth, length=0)
         ax.tick_params(axis='x', which='both', pad=xtickpad)
@@ -379,7 +380,7 @@ class Plotter(object):
 
         larval_stage_ends = [0, 16, 25, 34, 45]
         larval_stage_mids = [8, 20.5, 29.5, 39.5, 50]
-        larval_stage_labels = ['L1', 'L2', 'L3', 'L4', ' Adult']
+        larval_stage_labels = ['L1', 'L2', 'L3', 'L4', '  Adult']
 
 
         # Set x-axis to larval stages.

@@ -14,7 +14,7 @@ from src.plotting import plotter
 
 class Figure(object):
 
-    def __init__(self, output_path, page_size=7.20472):
+    def __init__(self, output_path, page_size=3.5039):
         self.plt = plotter.Plotter(output_path=output_path, page_size=page_size)
 
     def number_of_connections(self, f):
@@ -29,13 +29,16 @@ class Figure(object):
             ('All cell', con_count)
         ]
 
-        y_label = 'Connections between\ncells existing from birth'
+        y_label = 'Connections'
+        # y_label = 'Connections between\ncells existing from birth'
         self.plt.plot(
             'xy_graph', (x, y),
             y_label=y_label, save=f+'_number_of_connections', ylim=(0, 2000),
             linkpoints=False, stats='regression_only', clipon=True,
-            size=0.19, x_label='Developmental age',
-            margin={'left': 0.045, 'right': 0.015, 'top': 0.01, 'bottom': 0.03},
+            size=0.16, x_label='Developmental age',
+            margin={'left': 0.075, 'right': 0.015, 'top': 0.025, 'bottom': 0.06},
+            markersize=4,
+            ypad=1, ticklength=2
         )
 
         connection_at_birth = 0
@@ -67,12 +70,16 @@ class Figure(object):
             ('All cell', syn_count)
         ]
 
-        y_label = 'Synapses per connection\nexisting from birth'
+        y_label = 'Synapses per connection'
+        # y_label = 'Synapses per connection\nexisting from birth'
         self.plt.plot('xy_graph', (x, y),# err=[syn_err],
             y_label=y_label, save=f+'_synapses_per_connection', ylim=(0, 8),
+            yticks=(0, 4, 8),
             linkpoints=False, stats='regression_only', clipon=True,
-            size=0.19, x_label='Developmental age',
-            margin={'left': 0.045, 'right': 0.015, 'top': 0.01, 'bottom': 0.03},
+            size=0.16, x_label='Developmental age',
+            margin={'left': 0.075, 'right': 0.015, 'top': 0.025, 'bottom': 0.06},
+            markersize=4,
+            ypad=1, ticklength=2
         )
 
 
@@ -113,20 +120,21 @@ class Figure(object):
         
 
         xticks = np.arange(0, 1.11, 0.1)
-        xticklabels = ['' if i%2 else f'{x:.1f}' for i, x in enumerate(xticks)]
+        xticklabels = ['' if i%5 else f'{x:.1f}' for i, x in enumerate(xticks)]
 
         self.plt.plot(
             'scatter', ([bin_midpoints], [prob_of_new_con*100]), colors=['k'],
-            x_label=u'Contact area at birth (μm$^2$)',
-            y_label='Probability of new connection (%)',
-            size=0.19,
+            x_label=u'Contact at birth (μm$^2$)',
+            y_label='Probability of\nnew connection (%)',
             ylim=(0, 30), xlim=(0, 1.05),
             xgrid=True, stats='spearman_combined',
             xticks=xticks, xticklabels=xticklabels,
             yticks=range(0, 31, 10),
-            marker='.', markersize=12, markeredgewidth=1, alpha=1,
-            margin={'left': 0.045, 'right': 0.015, 'top': 0.01, 'bottom': 0.03},
-            save=f+'_connection_probability'
+            marker='.', markersize=5, markeredgewidth=1, alpha=1,
+            save=f+'_connection_probability',
+            size=0.16,
+            margin={'left': 0.075, 'right': 0.015, 'top': 0.025, 'bottom': 0.06},
+            ypad=1, ticklength=2
         )
 
 

@@ -11,7 +11,7 @@ from src.plotting import plotter
 
 class Figure(object):
     
-    def __init__(self, output_path, page_size=7.20472):
+    def __init__(self, output_path, page_size=3.5039):
         self.plt = plotter.Plotter(output_path=output_path, page_size=page_size)
 
     def cable_length(self, f):
@@ -29,8 +29,10 @@ class Figure(object):
         self.plt.plot('xy_graph', 
             (x, y), y_label=y_label, ylim=(0, 12), yticks=(0, 4, 8, 12), 
             save=f+'_cable_length', 
-            size=0.15, x_label='Developmental age',
-            margin={'left': 0.045, 'right': 0.005, 'top': 0.02, 'bottom': 0.03}
+            size=0.16, x_label='Developmental age',
+            margin={'left': 0.075, 'right': 0.015, 'top': 0.025, 'bottom': 0.06},
+            markersize=4,
+            ypad=1, ticklength=2
         )
         
         print('{:.2f} -> {:.2f}'.format(length[0], length[-1]))
@@ -66,11 +68,13 @@ class Figure(object):
         
         self.plt.plot('xy_graph', 
             (x, y),
-            size=0.15, x_label='Developmental age',
             ylim=(0, 100),
-            y_label='Persistent physical contact (%)',
+            y_label='Persistent contact (%)',
             save=f+'_stable_contacts', legendcol=1, rev_legend=True,
-            margin={'left': 0.045, 'right': 0.005, 'top': 0.02, 'bottom': 0.03}
+            size=0.16, x_label='Developmental age',
+            margin={'left': 0.075, 'right': 0.015, 'top': 0.025, 'bottom': 0.06},
+            markersize=4,
+            ypad=1, ticklength=2
             
         )
 
@@ -88,8 +92,10 @@ class Figure(object):
         self.plt.plot('xy_graph', 
             (x, y), y_label=y_label, ylim=(0, 9000), yticks=(0, 3000, 6000, 9000), 
             save=f+'_number_of_synapses', 
-            size=0.15, x_label='Developmental age',
-            margin={'left': 0.045, 'right': 0.005, 'top': 0.02, 'bottom': 0.03}
+            size=0.16, x_label='Developmental age',
+            margin={'left': 0.075, 'right': 0.015, 'top': 0.025, 'bottom': 0.06},
+            markersize=4,
+            ypad=1, ticklength=2
         )
         
         print('{:.2f} -> {:.2f}'.format(syn_count[0], syn_count[-1]))
@@ -114,9 +120,11 @@ class Figure(object):
         y_label = u'Synapse density (#/μm)'
         self.plt.plot('xy_graph', 
             (xs, ys), y_label=y_label, ylim=(0, 1.2), yticks=(0, 0.4, 0.8, 1.2), 
-            save=f+'_synapse_density', 
-            size=0.15, x_label='Developmental age',
-            margin={'left': 0.045, 'right': 0.005, 'top': 0.02, 'bottom': 0.03}
+            save=f+'_synapse_density',
+            size=0.16, x_label='Developmental age',
+            margin={'left': 0.075, 'right': 0.015, 'top': 0.025, 'bottom': 0.06},
+            markersize=4,
+            ypad=1, ticklength=2
         )
 
     def branches_correlation(self, f):
