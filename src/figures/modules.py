@@ -18,7 +18,7 @@ community_colors = {
 
 class Figure(object):
 
-    def __init__(self, output_path, page_size=7.20472):
+    def __init__(self, output_path, page_size=3.5039):
         self.plt = plotter.Plotter(output_path=output_path, page_size=page_size)
 
     def modules_across_development(self, f):
@@ -78,8 +78,8 @@ class Figure(object):
             community_counts[i] = (name, counts)
 
         self.plt.plot(
-            'stacked_bar_graph', community_counts, size=0.25,
-            margin={'left': 0.02, 'right': 0.08, 'top': 0.01, 'bottom': 0.03},
+            'stacked_bar_graph', community_counts, size=(0.25, 0.22),
+            margin={'left': 0.03, 'right': 0.15, 'top': 0.01, 'bottom': 0.03},
             nospacing=True, directlegend=True, colors=colors, xtickpad=2,
             y_label='Cells per module', x_label='Dataset', xlabels=time_labels,
             lines=lines,

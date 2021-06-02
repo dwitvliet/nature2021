@@ -173,7 +173,7 @@ class Figure(object):
         data = (xs, [(ft, feed_type_counts.loc[ft]) for ft in feed_types])
 
         self.plt.plot(
-            'xy_graph', data, size=(0.10, 0.19),
+            'xy_graph', data, size=(0.08, 0.16),
             margin={'left': 0.04, 'right': 0.10, 'top': 0.01, 'bottom': 0.04},
             y_label=y_label, ylim=ylim, stats='spearmanr', colors=colors,
             x_label='Developmental age',
