@@ -1008,6 +1008,7 @@ class Plotter(object):
             comparisons = stats
             ps = [proportions_ztest([data[-1][x1-1], data[-1][x2-1]], [sum([ds[x1-1] for ds in data]), sum([ds[x2-1] for ds in data])])[1] for x1, x2 in comparisons]
             ps_corrected = fdrcorrection0(ps)[1]
+            print(comparisons)
             print(ps_corrected)
             
             self._stats(ax, y, [(x1-1, x2-1) for x1, x2 in comparisons], ps_corrected)
@@ -1148,10 +1149,10 @@ class Plotter(object):
             else:
         
                 comparisons = stats
-                ps = [sc.stats.mannwhitneyu(box[x1-1], box[x2-1]).pvalue for x1, x2 in comparisons]
+                ps = [sc.stats.mannwhitneyu(box[x1-1], box[x2-1], alternative='two-sided').pvalue for x1, x2 in comparisons]
                 ps_corrected = fdrcorrection0(ps)[1]
 
-                print('Corrected p-values:', ps_corrected)
+                print('Corrected p-values:', comparisons, ps_corrected)
                 print('n:', [len(b) for b in box])
                 
                 self._stats(ax, y, comparisons, ps_corrected)
